@@ -1,0 +1,1233 @@
+﻿@charset "utf-8";
+
+
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe, table, caption,
+tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;}
+:focus {outline: 0;}
+ol, ul {list-style: none;}
+table {border-collapse: separate;border-spacing: 0;}
+caption, th, td {font-weight: normal;text-align: left;}
+blockquote:before, blockquote:after, q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+hr.clear{color:#DBD1E0;height:0;width:0;}
+*{padding:0;margin:0;border:none;background:none;}
+
+
+/*Corner - arredonda cantos*/
+	.corner1, .corner2{position:relative;overflow:hidden}
+	.corner1 .tl,.corner1 .tr,.corner1 .bl,.corner1 .br,
+	.corner2 .tl,.corner2 .tr,.corner2 .bl,.corner2 .br,
+	.corner3 .tl,.corner3 .tr,.corner3 .bl,.corner3 .br{width:3px;height:3px;position:absolute;}
+	
+	.corner1 .tl{top:0;left:0;background:url(corner1.png) no-repeat top left;}
+	.corner1 .tr{top:0;right:0;background:url(corner1.png) no-repeat top right;}
+	.corner1 .bl{bottom:0;left:0;background:url(corner1.png) no-repeat bottom left;}
+	.corner1 .br{bottom:0;right:0;background:url(corner1.png) no-repeat bottom right;}
+
+	.corner2 .tl{top:0;left:0;background:url(corner2.png) no-repeat top left;}
+	.corner2 .tr{top:0;right:0;background:url(corner2.png) no-repeat top right;}
+	.corner2 .bl{bottom:0;left:0;background:url(corner2.png) no-repeat bottom left;}
+	.corner2 .br{bottom:0;right:0;background:url(corner2.png) no-repeat bottom right;}
+	
+	.corner3 .tl{top:0;left:0;background:url(corner2.png) no-repeat top left;}
+	.corner3 .tr{top:0;right:0;background:url(corner2.png) no-repeat top right;}
+	.corner3 .bl{bottom:0;left:0;background:url(corner2.png) no-repeat bottom left;}
+	.corner3 .br{bottom:0;right:0;background:url(corner2.png) no-repeat bottom right;}
+
+
+/*Gerais*/
+	.clear{clear:both}
+	.noMarginLeft{margin-left:0 !important;}
+	.radio, .checkbox{background:none !important;}
+	a{text-decoration:none;color:#444444}
+	a:hover{text-decoration:underline;}
+	
+	.btEnviePergunta{display:block;float:left;width:135px;height:25px;background:url(../images/envie_pergunta.png) no-repeat;text-indent:-99999px;}
+	.btIndiqueMaisPessoas{display:block;width:184px;height:25px;background:url(../images/indique_mais_pessoas.png) no-repeat;text-indent:-99999px;}
+	
+	
+
+/*Classes Gerais - links -> MENU, header, SUB-MENU, Sitemap*/
+	.interna #subBar ul li a,
+	#header #canal ul li a,
+	#footer .sitemap .title /*título da sessão - sitemap*/
+	{color:#ffffff;}
+	#header #canal ul li.selected{background:#5d4965;height:25px;border-bottom:1px solid #DBD1E0;}
+
+/*Bordas das Boxes*/
+	#content .colSubItens > li ul{border-bottom:1px dotted #7F7982;	border-top:1px dotted #7F7982;}
+	/*Border top*/
+		#header #banner .cadastrese, /*Link " Cadastre-se no Atmosfera.." Header*/
+		#content .sessoes .vejaMais, /*link "Vejas respostas de meses anteriores" - home*/
+		
+		#content  .listagem .indice .paginacao,
+		#content .agenda .indice,/*Paginação*/
+		#content .fiqueDentro .sessoes .outrasMaterias,
+		#container .resultadoTeste .descricaoPontuacao .botoes,
+		#container .login .infoAcesso,
+		#content .participe .sessoes .outrasMaterias,
+		#content .fiqueDentro .indice .descricao
+		{border-top:1px dotted #7F7982;}
+	/*Border bottom*/
+		#container .listagem  .sessoes,
+		#container .listagem  .sessoes .outrasMaterias ul li,
+		#container .detalhe  .leiaTambem > .title, /*sessão "leia também" - detalhe materia*/
+		#content .pgColunistas li .content strong + strong.especialidade,
+		#container .detalhe .duvidas > .title,
+		#container .calculadora .info,
+		#container .exames .ordering,
+		#container .testes > .question,
+		#container .resultadoTeste > .question,
+		#content .downloads li .content .date,
+		span.validation-summary-errors,
+		#content .participe .sessoes .outrasMaterias ul li.border,
+		#content .servicos .indice .title,
+		
+		/*carrosel de colunistas home*/
+		#content .colunistas .stepColunistas .stepContent ul li .descricao strong
+		{border-bottom:1px dotted #7F7982;}
+
+/*Titulos - Negrito*/
+	#content > .breadcrumb li a,
+	#content > .content > .info strong,
+	#content .sessoes li .title,
+	#content .sessoes li .content strong,
+	
+	
+	#content .colunistas .stepColunistas .stepContent ul li .descricao strong,
+	#content .colunistas .stepColunistas .stepContent ul li .name,
+	#content .colunistas > .title,
+	
+	#content .indice .title,
+	#content .indice .paginacao .selected,
+	#content .indice .descricao strong,
+	
+	#content .listagem .sessoes > li.title,
+	#content .listagem .indice .descricao .date,
+	
+	#container .detalhe  .materia > .title,
+	#container .detalhe  .leiaTambem > .title,
+	#container .detalhe  .leiaTambem li strong,
+	#container .detalhe .duvidas li,
+	
+	#container .detalheArtigoColunista .materia > .info .title,
+	#container .detalheArtigoColunista .info .title,
+	
+	#container .calculadora .listaCalculadora li,
+	#container .exames .listaExames li,
+	
+	#container .testes > form .questionario > li > strong,
+	#container .testes > form .question,
+	#container .testes > form .questionario li ul li .marcador,
+	
+	#container .resultadoTeste > .question,
+	#container .resultadoTeste > .pontos,
+	#container .resultadoTeste .descricaoPontuacao li strong,
+	
+	#container .login form fieldset .title,
+	#container .login .infoAcesso strong,
+	#container .login .infoAcesso p a,
+	#container .login form .novoUsuario a ,
+	
+	#container .content form .cadastro .outrasOpcoes .title,
+	#container .content form .cadastro .campoObrigatorio,
+	#container .content form .cadastro .cpfInfo  a,
+	#container .content form .cadastro .senhaInfo,
+	#container .content form .cadastro .receberInfo,
+	
+	span.validation-summary-errors,
+	
+	#container .participe > .info strong,
+	#content  .buscaAvancadaResult .info strong,
+	#content .narede .title,
+	#footer .sitemap .title,
+	#container .footerInfo strong{font-weight:bold;}
+	
+
+
+
+
+body{line-height:1;font-family:Verdana, Geneva, sans-serif;color:#454545;background:url('../images/bg1.png') #e4e4e4 top center no-repeat;}
+#container{width:922px;position:relative;margin:0 auto;}
+
+
+/*============ Header ============*/
+	#header{/*height:475px;*/height:auto;}
+	#header #topo{height:70px;background:url('../images/top.png') ;position:relative;z-index:2;}
+	/*Os 2 logotipos do topo*/
+	#header h1.logotipo a{
+		float:left;
+		width:250px;
+		height:38px;
+		margin:9px 0 0 20px ;
+		background:url('../images/logotipo.png') no-repeat;
+		text-indent:-99999px;}
+	#header h2.logotipo a{
+		background:url("../images/logo.png") no-repeat scroll 0 0 transparent;
+		float:right;
+		height:50px;
+		margin:0 23px 0 0;
+		text-indent:-99999px;
+		width:168px;}
+
+
+	/*banner - no topo com mascara*/
+		#header #banner{
+			width:922px;
+			height:400px;
+			overflow:hidden;
+			background:#ffffff;
+			position:relative;
+			top:-70px;
+			z-index:1;}
+		
+		/*Link para Cadastro*/
+		#header #banner .cadastrese{
+			display:block;
+			float:right;
+			width:236px;
+			height:15px;
+			padding-top:12px;
+			line-height:15px;
+			position:absolute;
+			top:240px;
+			right:175px;
+			padding-left:19px;
+			font-size:13px;
+			color:#4b3954;
+			z-index:3;
+			background:url('../images/marcador3.png') no-repeat left bottom;}
+
+	/*Menu Principal*/
+		#header #bar{position:relative;margin-top:-121px;height:69px;z-index:2;}
+		#header #bar .left{width:556px;height:69px;background:url('../images/left_bar.png')}
+		#header #bar li{float:left;}
+		#header #bar li a{display:block;width:122px;height:69px;text-indent:-99999px;}
+		
+		#header #bar .saude a{background:url('../images/bt_saude.png');}
+		#header #bar .saude a:hover,
+		#header #bar .saude a.selected{background:url('../images/bt_saude.png') 122px 0;}
+		
+		#header #bar .familia a{background:url('../images/bt_familia.png');}
+		#header #bar .familia a:hover,
+		#header #bar .familia a.selected{background:url('../images/bt_familia.png') 122px 0;}
+		
+		#header #bar .vida a{background:url('../images/bt_vida.png');}
+		#header #bar .vida a:hover,
+		#header #bar .vida a.selected{background:url('../images/bt_vida.png') 122px 0;}
+		
+
+	/*Canais - fica abaixo do Menu Principal*/
+		#header #canal{clear:both;position:relative;/*top:280px;*/background:url('../images/bg_canal.gif') repeat 0 -1px #7f6689;}
+		#header #canal ul{min-height:26px;}
+		#header #canal ul li{display:block;float:right;min-height:25px;border-left:solid 1px #dbd1e0;}
+		#header #canal ul li a{display:block;line-height:26px;padding:0 17px;line-height:26px;font-size:13px;}
+	
+
+
+
+	/*========  news e busca =========*/
+		#header .news_busca{
+			position:relative;
+			clear:both;
+			height:30px;
+			line-height:27px;
+			background:url('../images/bg_news.gif');}
+			
+		/*news*/
+			#header .newsticker{float:left}
+			.newsticker{margin-left:18px;}
+			.newsticker .btScroll{float:left;margin-top:9px;margin-right:13px;}
+			.newsticker .btScroll  img{display:block;cursor:pointer;}
+			.newsticker .btScroll  img + img{margin-top:5px;}
+			.newsticker #frameScrol{float:left;position:relative;	height:30px;overflow:hidden;}
+			.newsticker .content{padding-top:2px;position:relative;font-size:11px;color:#454545;}
+			.newsticker .content p{height:30px;margin-bottom:2px;line-height:30px;}
+			
+		/*busca*/
+			#header .news_busca .busca{float:right;height:30px;}
+			#header .news_busca .busca .labelCampo{float:left;width:150px;height:20px;margin:5px 3px 0 0;background:url(../images/campo_busca.png);}
+			#header .news_busca .busca .labelCampo .campo{width:138px;height:20px;line-height:20px;padding:0 5px;text-align:right;position:relative;top:-5px;*+top:0;}
+			#header .news_busca label .bt_ok{float:left;width:20px;height:20px;margin:5px 23px 0 0;cursor:pointer;background:url(../images/bt_ok.png)}
+
+
+
+
+
+
+
+/*================ Conteudo da página ==================*/
+#content{background:#dbd1e0;min-height:100px;padding:15px 0 15px 20px;}
+/*Breadcrumb*/
+	#content > .breadcrumb{height:19px;margin-bottom:15px;float:left;width:711px;}
+	#content > .breadcrumb li{
+		float:left;
+		padding-left:25px;
+		line-height:23px;
+		font-size:23px;
+		background:url(../images/marcador2.png) no-repeat 0 2px;}
+	#content > .breadcrumb li + li{	font-size:15px;background:none;padding-left:5px;}
+	
+	
+	/*Content Left -  lado esquerdo do conteudo*/
+		#content > .content{float:left;width:617px;}
+		#content > .content > .info{font-size:12px;margin-bottom:15px;}
+		#content > .content > p.info{line-height:18px;}
+		
+		
+	/*Publicidade - fica a direita do conteudo*/
+		#content .publicidade{float:left;margin:0 0 15px 20px;}
+		#content .publicidade > li ul li img{display:none;}
+		#content .publicidade > li + li{margin-top:12px;}
+		
+		
+	
+/*Boxes de Sessoes*/
+	#content .sessoes li{float:left;width:285px;}
+	#content .sessoes li + li{margin:0 0 10px 20px}
+	#content .sessoes li .title{
+		height:13px;
+		line-height:13px;
+		padding-left:20px;
+		font-size:13px;
+		margin-bottom:12px;
+		color:#4b3954;
+		background:url('../images/marcador1.png') no-repeat left;}
+	/*Texto com conteudo - lado direito da imagem*/
+		#content .sessoes li .corner2{display:block;float:left;width:121px;height:86px;margin-right:10px;}
+		#content .sessoes li .content {float:left;width:153px;font-size:11px;}
+		#content .sessoes li .content strong{	margin-bottom:9px;display:block;color:#4b3954;}
+
+	/*Box maior com link de "Veja mais"*/
+		#content .sessoes .comVejaMais{height:155px;}
+		#content .sessoes .vejaMais{
+			clear:both;
+			float:left;
+			width:261px;
+			height:24px;
+			margin-top:8px;}
+		.vejaMais a{
+			display:block;
+			padding-left:20px;
+			margin-top:6px;
+			font-size:11px;
+			color:#4b3954;
+			background:url(../images/marcador+.png) no-repeat left;}
+			
+		.vejaMais a:hover{
+			text-decoration:underline !important;
+			}
+
+	/*Box de Saude*/
+		#content .sessoes .saude .title,
+		#content .sessoes .saude .content strong,
+		#content .sessoes .saude .content strong a{color:#3b747e;}
+	/*Box de Familia*/
+		#content .sessoes .familia .title,
+		#content .sessoes .familia .content strong,
+		#content .sessoes .familia .content strong a{color:#455793;}
+	/*Box de Vida*/
+		#content .sessoes .vida .title,
+		#content .sessoes .vida .content strong,
+		#content .sessoes .vida .content strong a{color:#9c3362;}
+		/*Box de higiene Intima */
+		#content .sessoes .higieneIntima .title,
+		#content .sessoes .higieneIntima .content strong,
+		#content .sessoes .higieneIntima .content strong a{color:#5C4864;}
+	
+
+
+	/*============Colunistas - stepbanner==============*/
+		#content .colunistas{width:848px;height:233px;padding:15px;background:url(../images/bg_colunistas.gif);}
+		#content .colunistas > .title{
+			float:left;
+			padding-left:18px;
+			font-size:14px;
+			color:#4b3954;
+			background:url(../images/marcador1.png) no-repeat left;}
+		#content .colunistas .vejaMais{
+			display:block;
+			float:right;
+			height:13px;
+			line-height:13px;
+			padding-left:18px;
+			font-size:10px;
+			cursor:pointer;
+			background:url(../images/marcador+.png) no-repeat left;}
+		
+		/*step*/
+		#content .colunistas .stepColunistas .prev,
+		#content .colunistas .stepColunistas .next{
+			display:block;
+			float:left;
+			width:20px;
+			height:85px;
+			text-indent:-99999px;
+			cursor:pointer;}
+		#content .colunistas .stepColunistas .prev{
+			background:url(../images/bt_prev.png) no-repeat center;}
+		#content .colunistas .stepColunistas .next{
+			background:url(../images/bt_next.png) no-repeat  center;}
+		
+		#content .colunistas .stepColunistas{clear:both;width:800px !important;margin:30px auto 0 auto;}
+		#content .colunistas .stepColunistas .stepContent{float:left;width:710px;height:233px;position:relative;margin:0 25px;overflow:hidden;}
+		#content .colunistas .stepColunistas .stepContent ul{overflow:hidden;}
+		#content .colunistas .stepColunistas  .stepContent ul li{float:left;width:120px;margin-left:22px;}
+		#content .colunistas .stepColunistas .stepContent ul li .corner1{
+			width:99px;
+			height:70px;}
+		#content .colunistas .stepColunistas  .stepContent ul li .name{width:100px;font-size:13px;}
+	
+		#content .colunistas .stepColunistas  .stepContent ul li .descricao{margin-top:2px;font-size:11px;height:100px;padding-top:11px;}
+		#content .colunistas .stepColunistas  .stepContent ul li .descricao strong{
+			display:block;
+			margin-bottom:6px;
+			padding-bottom:5px;
+			font-size:10px;}	
+	
+	
+	/*========== Na Rede - icones: orkut, twitter etc..  =============*/
+		#content .narede{clear:both;margin-top:18px;}
+		#content .narede li{float:left;}
+		#content .narede .title{padding-left:20px;color:#4b3954;	background:url(../images/marcador3.png) no-repeat}
+		#content .narede a{display:block;width:23px;height:22px;margin:0 3px;text-indent:-99999px;}
+		#content .narede .twitter a{background:url('../images/twitter.png') no-repeat;}
+		#content .narede .orkut a{background:url('../images/orkut.png') no-repeat}
+		#content .narede .youtube a{background:url(../images/youtube.png) no-repeat}
+		#content .narede .myspace a{background:url(../images/myspace.png) no-repeat}
+		#content .narede .facebook a{background:url(../images/facebook.png) no-repeat}
+		#content .narede .delicious a{background:url(../images/delicious.png) no-repeat}
+	
+
+
+
+
+
+
+
+/*Coluna de Sub-Itens - mesma coiza que os boxes de sessões, 
+mas algumas alterações, fica na home dos pilares*/
+	#content .colSubItens > li{min-height:160px;}
+	#content .colSubItens > li + li{margin-top:0;margin-bottom:30px;}
+	#content .colSubItens > li ul{padding:14px 0 5px 0;}
+	#content .colSubItens > li ul > li{float:none;margin-left:0;min-height:125px}
+	#content .colSubItens > li ul > li  .vejaMais{width:100%;text-align:right;border:none;}
+	#content .colSubItens > li ul > li  .vejaMais a{float:right;}
+
+	/*Botão de Voltar*/
+	.interna #content .btVoltar{
+		display:block;
+		clear:both;
+		width:65px;
+		height:25px;
+		text-indent:-99999px;
+		background:url('../images/bt_voltar.png')}
+
+/*=============== Classes páginas Internas =======================*/
+	.interna{background:url('../images/bg2.png') #e4e4e4 top center no-repeat;}
+	.interna  #header{/*height:321px;*/height:auto;}
+	.interna  #header #banner{height:220px;}
+	
+	/*Link de Cadastre-se - lica no header*/
+	.interna  #header #banner .cadastrese{top:140px;right:620px;}
+
+	/*Sub Menu das internas*/
+	.interna #subBar{clear:both;position:relative;/*top:99px;*/border-bottom:solid 1px #dbd1e0;}
+	.interna #subBar ul{float:right;}
+	.interna #subBar ul li{float:left;line-height:26px;border-left:solid 1px #b1afbd;border-right:solid 1px #b1afbd;height:26px;}
+	.interna #subBar ul li + li{border-left:none;}
+	.interna #subBar ul li a{font-size:12px;display:block;padding:0 21px;}
+
+
+
+/*Padrão de Cores (internas)*/
+	#content .breadcrumb li a,
+	#content .sessoes li .title,
+	#content .sessoes li .content strong,
+	#content .sessoes li .content strong a,
+	#content .colSubItens > li ul > li .vejaMais a,
+	
+	/*pagina de Listagem*/
+	#content .indice .title,
+	#content .indice .descricao strong,
+	.indice .paginacao ul li a,
+	.listagem .indice .descricao .date,
+	.listagem .indice .paginacao > span,
+	
+	/*pagina de detalhes. visualização da materia / Artigo */
+	#container .detalhe .materia > .title ,
+	#container .materia > .title,
+	#content .content1 .materia cite, 
+	#content .content1 .materia .date,
+	#content .content1 .materiaBar a ,
+	#content .leiaTambem > .title,
+	#container .detalheArtigoColunista .info .title ,
+	#content .content1 .leiaTambem li strong,
+	
+	/*Colunistas da home*/
+	#content .colunistas .stepColunistas .stepContent ul li .name,
+	#content .colunistas .stepColunistas .stepContent ul li .descricao strong
+	
+	/*Home colunista*/
+	
+	{color:#5c4864;}
+	
+	#content .pgColunistas p.content strong + strong + strong a
+	{color:#635A69;}
+	
+	
+
+
+
+/*=================== Pilar de SAÚDE ==================*/
+	/*Sub menu do Pilar*/
+	.pilarSaude #subBar{background:url(../images/bg_subBar.png) repeat 0 -1px #2a424b;}
+	.pilarSaude #subBar li.selected{background:#3b747e;}
+	
+	.pilarSaude #content .breadcrumb li a,
+	.pilarSaude #content .sessoes li .title,
+	.pilarSaude #content .sessoes li .content strong,
+	.pilarSaude #content .sessoes li .content strong a,
+	.pilarSaude #content .colSubItens > li ul > li .vejaMais a,
+	
+	/*pagina de Listagem*/
+	.pilarSaude #content .indice .title,
+	.pilarSaude #content .indice .descricao strong,
+	.pilarSaude .indice .paginacao ul li a,
+	
+	/*pagina de detalhes. visualização da materia / Artigo*/
+	.pilarSaude #container .detalhe .materia > .title ,
+	.pilarSaude #content .content1 .materia > .title,
+	.pilarSaude #content .detalhe cite, 
+	.pilarSaude #content .detalhe .date,
+	.pilarSaude #content .content1 .materiaBar a ,
+	.pilarSaude #content.content1 .leiaTambem > .title,
+	.pilarSaude #content .content1 .leiaTambem li strong {color:#3b747e;}
+	
+	/*Item selecionado no menu*/
+	.pilarSaude #header #bar .saude a{background:url(../images/bt_saude.png) 122px 0;}
+
+
+/*=================== Pilar de FAMÍLIA ==================*/
+	/*Sub menu do Pilar*/
+	.pilarFamilia #subBar{background:url(../images/bg_subBar.png) repeat 0 -1px #373d63;}
+	.pilarFamilia #subBar li.selected{background:#455793;}
+	
+	.pilarFamilia #content .breadcrumb li a,
+	.pilarFamilia #content .sessoes li .title,
+	.pilarFamilia #content .sessoes li .content strong,
+	.pilarFamilia #content .sessoes li .content strong a,
+	.pilarFamilia #content .colSubItens > li ul > li .vejaMais a,
+	
+	/*pagina de Listagem*/
+	.pilarFamilia #content .indice .title,
+	.pilarFamilia #content .indice .descricao strong,
+	.pilarFamilia .indice .paginacao ul li a,
+	
+	/*pagina de detalhes. visualização da materia / Artigo*/
+	.pilarFamilia #container .detalhe .materia > .title,
+	.pilarFamilia #content .content1 .materia > .title,
+	.pilarFamilia #content .detalhe cite, 
+	.pilarFamilia #content .detalhe .date,
+	.pilarFamilia #content .content1 .materiaBar a ,
+	.pilarFamilia #content.content1 .leiaTambem > .title,
+	.pilarFamilia #content .content1 .leiaTambem li strong {color:#455793;}
+	
+	/*Item selecionado no menu*/
+	.pilarFamilia #header #bar .familia a{background:url(../images/bt_familia.png) 122px 0;}
+
+
+/*=================== Pilar de VIDA ==================*/
+	/*Sub menu do Pilar*/
+	.pilarVida #subBar{background:url(../images/bg_subBar.png) repeat 0 -1px #5b2f4c;}
+	.pilarVida #subBar li.selected{background:#9c3362;}
+	
+	.pilarVida #content .breadcrumb li a,
+	.pilarVida #content .sessoes li .title,
+	.pilarVida #content .sessoes li .content strong,
+	.pilarVida #content .sessoes li .content strong a,
+	.pilarVida #content .colSubItens > li ul > li .vejaMais a,
+	
+	/*pagina de Listagem*/
+	.pilarVida #content .indice .title,
+	.pilarVida #content .indice .descricao strong,
+	.pilarVida .indice .paginacao ul li a,
+	
+	/*pagina de detalhes. visualização da materia / Artigo*/
+	.pilarVida #content .detalhe .materia > .title,
+	.pilarVida #content .content1 .materia > .title,
+	.pilarVida #content .detalhe cite, 
+	.pilarVida #content .detalhe .date,
+	.pilarVida #content .content1 .materiaBar a ,
+	.pilarVida #content.content1 .leiaTambem > .title,
+	.pilarVida #content .content1 .leiaTambem li strong {color:#9c3362;}
+	
+	/*Item selecionado no menu*/
+	.pilarVida #header #bar .vida a{background:url(../images/bt_vida.png) 122px 0;}
+	
+
+
+/*Compartilhar*/
+#container .detalhe .materiaBar .compartilhar { float: left; margin-left: 25px; }
+#container .detalhe .materiaBar .compartilhar li { float:left; margin-right: 10px; }
+#container .detalhe .materiaBar .compartilhar li a { display:block; height:25px; width: 25px; }
+#container .detalhe .materiaBar .compartilhar li.twitter a{background: url(../images/ico_twitter_25x25.png) no-repeat;}
+#container .detalhe .materiaBar .compartilhar li.orkut a{background: url(../images/ico_orkut_25x25.png) no-repeat;}
+#container .detalhe .materiaBar .compartilhar li.myspace a{background: url(../images/ico_myspace_modal.png) no-repeat;}
+#container .detalhe .materiaBar .compartilhar li.facebook a{background: url(../images/ico_facebook_25x25.png) no-repeat;}
+
+
+/*=================== Listagens ==================*/
+	#content .listagem .sessoes{width:100%;padding-bottom:16px;float:left;border:none;}
+	#content .listagem  .sessoes li + li{margin:0;} /*Reset*/
+	
+	/*===== em destaque ======*/
+		/*texto / conteudo da materia - fica abaixo da imagem (materia em destaque)*/
+		#content .listagem  .sessoes .destaque  .corner2{width:240px;height:172px;}
+		#content .listagem  .sessoes .destaque  .content{margin-top:10px;width:240px;font-size:14px;}
+		#content .listagem  .sessoes .destaque  .content strong{margin-bottom:0}
+	
+	/*Lista de materias - fica a direita da materia em destaque*/
+		#content .listagem .sessoes > li.title{
+			clear:both;
+			font-size:15px;
+			padding-left:19px;
+			background:url(../images/marcador3.png) no-repeat scroll left center transparent;}
+		#content .listagem .sessoes > li + li .vejaMais { margin-top:-2px;}
+			
+		#content .listagem .sessoes .outrasMaterias ul li{padding:11px 0;}
+		#content .listagem .sessoes li .corner2{width:99px;height:70px;}
+		#content .listagem .sessoes .outrasMaterias ul li:first-child{padding-top:0;}
+		#content .listagem .sessoes .outrasMaterias ul li.last{border:none;}
+	
+		/*Imagem da lista de outras materias*/
+			#content .listagem  .sessoes li .corner1{width:99px;height:70px;}
+
+
+
+	/*Indice*/
+		/*Ajustes de layout para páginas de listagens - resets*/
+			/* Coluna a esquerda - com as matérias em destaque e o indece */
+				#content .btVoltar{margin-top:25px;}
+		
+		#content .indice{clear:both;width:570px;padding-top:16px;}
+		#content .indice .title{float:left;font-size:15px;padding-left:19px;margin-bottom:20px;background:url(../images/marcador4.png) no-repeat left;}
+		/*select para escolher o assunto*/
+			#content .indice .assunto{float:right;}
+		/*lista de materias / descriçao*/
+			#content .indice .descricao{clear:both;margin-bottom:20px;font-size:11px;color:#454545;}
+			#content .fiqueDentro .indice .descricao{padding-top:12px;*+margin-top:-5px;*+padding-top:15px;float:left;}
+			#content .indice .descricao + .descricao{border:none;padding:0px;*+margin-top:0;}
+			#content .indice .descricao a{color:#454545;}
+			#content .indice .descricao strong{display:block;margin-bottom:9px;}
+			#content .indice .descricao .date{font-size:10px;}
+
+		/*paginação*/
+			#content .indice .paginacao{clear:both;height:15px;padding-top:15px;margin-top:15px;}
+			#content .indice .paginacao > span{float:left;}
+			#content .indice .paginacao ul{}
+			#content .indice .paginacao,
+			#content .indice .paginacao ul li a{font-size:11px;}
+			#content .indice .paginacao span,
+			#content .indice .paginacao ul li{float:left;margin-right:4px;}
+
+		
+
+
+
+
+
+
+
+/*=============== Detalhes / visualização da materia ==============*/
+	#container .detalhe {float:left;}
+	#container .detalhe  .materia{background:#fff;width:581px;padding:18px;}
+	#container .detalhe  .materia a{text-decoration:underline;}
+	#container .detalhe  .materia > .title{margin-bottom:6px;font-size:18px;}
+	#container .detalhe  .materia cite,
+	#container .detalhe  .materia .date{display:block;font-size:11px;}
+	#container .detalhe  .materia .content{margin-top:12px;font-size:12px;line-height:15px;}
+
+	/*Menu de Navegação / avaliação*/
+		#container .detalhe  .materiaBar{
+			width:581px;
+			height:25px;
+			margin-top:11px;
+			padding:18px;
+			background:url(../images/bg_colunistas.gif)}
+		#container .detalhe  .materiaBar a{font-size:10px;}
+		
+		/*avaliação / estrelas de votação*/
+			#container .detalhe  .materiaBar .avaliacao{float:left;}
+			#container .detalhe  .materiaBar .avaliacao #rate{float:left;margin:2px;}
+			#container .detalhe  .materiaBar .avaliacao > a{display:block;float:left;line-height:24px;margin-left:5px;}
+			
+		/*Menu com: Envie, Imprima compartilhe etc...*/
+			#container .detalhe  .materiaBar .settings{float:left;}
+			#container .detalhe  .materiaBar .settings li{	float:left;margin-left:16px;}
+			#container .detalhe  .materiaBar .settings li a{display:block;height:25px;padding-left:35px;line-height:25px;}
+			#container .detalhe  .materiaBar .settings .send a{background:url(../images/ico_send.png) no-repeat;}
+			#container .detalhe  .materiaBar .settings .print a{background:url(../images/ico_print.png) no-repeat;}
+			#container .detalhe  .materiaBar .settings .compartilhe a{background:url(../images/ico_compartilhe.png) no-repeat;}
+			#container .detalhe  .materiaBar .settings .promova a{background:url(../images/ico_promova.png) no-repeat;}
+	
+	/*LEIA TAMBÉM - Lista de Materias relacionadas*/
+		#container .detalhe  .leiaTambem{margin-top:32px;}
+		#container .detalhe  .leiaTambem > .title{
+			height:13px;
+			padding:0 0 12px 20px;
+			margin-bottom:17px;
+			line-height:13px;
+			font-size:14px;
+			background:url(../images/marcador4.png) no-repeat;}
+		#container .detalhe  .leiaTambem li strong{font-size:11px;}
+		#container .detalhe  .leiaTambem li a{font-size:11px;color:#454545;}
+		
+
+
+
+
+
+/*=================== Footer ==================*/
+	/*Sitmap*/
+	#footer{clear:both;min-height:265px;padding-bottom:10px;background:#7f6689;}
+	#footer .sitemap{padding-left:25px;}
+	#footer .sitemap > li{float:left;width:170px;}
+	#footer .sitemap > li + li{margin-left:40px;}
+	
+	#footer .sitemap .title{
+		display:block;
+		padding-left:30px;
+		font-size:13px;
+		background:url(../images/marcador1.png) transparent no-repeat left;}
+	#footer .sitemap .title a{color:#fff;}
+	
+	#footer .sitemap li a{font-size:11px;color:#dbd1e0;}
+	#footer .sitemap li ul{margin-top:12px;}
+	#footer .sitemap li ul li + li{margin-left:30px;}
+
+
+
+/*Footer de Informações*/
+	#container .footerInfo{width:665px;margin:32px auto 25px auto;}
+	#container .footerInfo p{display:block;margin-bottom:17px;font-size:11px;line-height:14px;color:#454545;text-align:center;}
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+/*============== Pequenos ajustes de Páginas =================*/
+	/*Fique por Dentro*/
+		#content .fiqueDentro .sessoes .vejaMais,
+		#content .fiqueDentro .indice .vejaMais{border:none;float:left;clear:none;}
+		
+		/*Herda classe de listagem, ajusta Tamanho da imagem (corner2)*/
+		#content .fiqueDentro .sessoes .outrasMaterias{clear:both;width:100%;padding-top:15px;margin-top:10px;}
+		#content .fiqueDentro .sessoes .outrasMaterias ul li{border-bottom:none;padding:0;}
+		#content .fiqueDentro .sessoes li .corner2{width:121px;height:86px;}
+		
+		
+	
+	
+	/*Agenda ==========*/
+		/*Herda classe de listagem, ajusta espaço entre itens*/
+		#content .agenda .indice .descricao{margin-bottom:5px;}
+
+
+	
+	/*Colunistas*/
+		#content .pgColunistas   li{width:auto;}
+		#content .pgColunistas  > li ul{border:none;}
+		#content .pgColunistas  > li ul > li{float:left;width:auto;margin-top:0;margin-right:38px;}
+		#content .pgColunistas li .corner2{width:99px;height:70px;}
+		#content .pgColunistas li + li{margin:0;}
+		#content .pgColunistas li{min-height:90px;}
+		#content .pgColunistas li .content strong {font-size:10px;}
+		#content .pgColunistas li .content .nome{padding-bottom:5px;margin-bottom:0;font-size:10px;}
+		
+		#content .pgColunistas > li{width:600px;}
+
+
+	/*Perfil (perfil de cada colunista)*/
+		#content .perfil .sessoes li .content{width:615px;float:none;}
+		#content .perfil .sessoes li .contentPerfilEditavel	 strong{display:inline;}
+		#content .perfil .sessoes li .contentPerfilEditavel	 em{font-style:italic;}
+		#content .perfil .sessoes li .contentPerfilEditavel	 a{text-decoration:underline;}
+		
+	/*Detalhe Artigo Colunista*/
+		#container .detalheArtigoColunista > .info{min-height:55px;}
+		#container .detalheArtigoColunista .info .info{margin-top:10px;margin-bottom:15px;}
+		#container .detalheArtigoColunista > .info .vejaMais{float:right;}
+		
+		#container .detalheArtigoColunista .info .corner2{float:left;width:99px;height:70px;margin-right:25px;margin-bottom:10px;}
+		
+		/*Somente para Pergunte ao Especialista*/
+		#container .detalheArtigoColunista .info .corner3{float:left;width:121px;height:86px;margin-right:25px;margin-bottom:10px;}
+		
+		#container .detalheArtigoColunista .info .title{font-size:12px;margin-bottom:3px;}
+		#container .detalheArtigoColunista .info cite,
+		#container .detalheArtigoColunista .info .date{display:block;font-size:10px;}
+		
+		#container .detalheArtigoColunista .materia > .info{float:left;width:425px;}
+		#container .detalheArtigoColunista .materia > .info .title{font-size:12px;}
+		#container .detalheArtigoColunista .materia > cite,
+		#container .detalheArtigoColunista .materia > c.date{font-size:11px;}
+		
+		#container .detalheArtigoColunista .materia .content{
+			clear:both;margin-top:10px}
+		
+		
+		
+		
+		
+		
+		
+	
+
+	/*Gerais ==========*/
+		/*ajusta o indice / ajusta espaço entre itens */
+		#content .agenda .indice .descricao,
+		#content .fiqueDentro .indice .descricao{margin-bottom:5px;}
+
+		/*Titulo de cada grupo / lista*/
+		#content .fiqueDentro .indice .title{margin-bottom:10px;padding-bottom:10px;padding-top:10px;width:285px}
+		#content .fiqueDentro .indice .vejaMais{margin-top:3px;}
+
+
+	/*Lista de duvidas==========*/
+		#container .detalhe .duvidas{margin-top:20px;float:none;}
+		#container .detalhe .duvidas > .title{font-size:14px;padding-bottom:10px;margin-bottom:22px;}
+		#container .detalhe .duvidas li{cursor:pointer;}
+		#container .detalhe .duvidas li + li{font-size:12px;margin-bottom:20px;}
+		#container .detalhe .duvidas li + li p{display:none;font-style:italic;margin-top:10px;font-weight:normal;margin-left:25px;}
+			
+			
+	/*Calculadora medica==========*/
+		#container .calculadora > .info{padding-bottom:25px;}
+		#container .calculadora .listaCalculadora{width:500px;}
+		#container .calculadora .listaCalculadora li{min-height:17px;line-height:17px;margin-bottom:17px;padding-left:50px;font-size:12px;}
+		
+		/*Item com icone NOVO */
+		#container .content .listaCalculadora li.novo,
+		#container .content .listaExames li.novo,
+		#content .indice li.novo{background:url(../images/bt_novo.gif) no-repeat left;padding-left:50px !important;min-height:18px;}
+		
+	
+	/*Exames==========*/
+		#container .exames > .info{font-size:12px;padding-bottom:15px;}
+		
+		#container .exames .ordering{height:17px;padding-bottom:18px;margin-bottom:15px;}
+		#container .exames .ordering li{float:left;margin-right:12px;margin-bottom:5px;font-size:15px;}
+		
+		#container .exames .listaExames{width:500px;}
+		#container .exames .listaExames li{min-height:17px;line-height:17px;margin-bottom:5px;padding-left:50px;font-size:12px;}
+		
+		
+	/*Testes / quiz ==========*/
+		#container .testes .ordering{height:17px;padding-bottom:18px;margin-bottom:15px;}
+		#container .testes .ordering li{float:left;margin-right:12px;margin-bottom:5px;font-size:15px;}
+		
+		#container .testes .listaExames{width:500px;}
+		#container .testes .listaExames li{min-height:17px;line-height:17px;margin-bottom:5px;padding-left:25px;font-size:12px;}
+		
+		#container .testes > .question{
+			font-size:15px;
+			margin-bottom:15px;
+			padding-bottom:12px;}
+		
+		
+		#container .testes >  form .questionario li{font-size:12px;margin-bottom:5px;}
+		#container .testes > form .questionario > li{margin-bottom:15px;}
+		#container .testes > form .questionario > li > strong{display:block;margin-bottom:5px;}
+		#container .testes > form .questionario li ul li{margin-left:15px;cursor:pointer;}
+		#container .testes > form .questionario li ul li .marcador{margin-right:5px;}
+		#container .testes > form .questionario li ul li input{display:none;}
+		
+		/*Botão de finalizar teste*/
+		.interna #content .btFinalizarTeste{
+			display:block;
+			clear:both;
+			width:118px;
+			height:25px;
+			text-indent:-99999px;
+			background:url(../images/bt_finalizar_teste.png)}
+		
+		
+		
+		
+		
+	/*Resultado Teste==========*/
+		#container .resultadoTeste > .question{
+			font-size:15px;
+			margin-bottom:15px;
+			padding-bottom:12px;}
+
+		#container .resultadoTeste > .pontos{margin-bottom:15px;font-size:15px;}
+		
+		#container .resultadoTeste .descricaoPontuacao{padding-bottom:30px;}
+		#container .resultadoTeste .descricaoPontuacao li{font-size:12px;margin-bottom:10px;}
+		#container .resultadoTeste .descricaoPontuacao li strong{display:block;}
+		
+		
+	
+	
+	
+	/*Home Serviços*/
+		#container .servicos .sessoes li{float:left;width:290px;min-height:80px;margin:0;}
+		#content .servicos .sessoes li .corner2{width:99px;height:70px;}
+		#content .servicos .sessoes li .date{display:block;margin-bottom:10px;}
+		/*acesse também*/
+		#content .servicos .indice .title{float:none;padding-bottom:10px;background-position:0 2px}
+		#content .servicos .indice .descricao{float:left;clear:none;width:285px;}
+		#content .fiqueDentro .indice .descricao{width:100%;clear:both;}
+	
+	
+	
+	
+	/*Downloads*/
+		#content .downloads > li{width:290px;min-height:85px;}
+		#content .downloads li .corner2{width:99px;height:70px;}
+		#content .downloads .sessoes li + li{margin:0 0 15px 0;}
+		
+		#content .downloads li .content .date{padding-bottom:5px;margin-bottom:5px;font-size:10px;}
+		#content .downloads .indice .paginacao{border:none;}
+	
+		/*Ajuste Layout / herda classe sessões*/
+		#content .downloads .sessoes li,
+		#content .downloads .sessoes li + li{margin-bottom:40px;margin-right:22px;}
+		#content .downloads .sessoes li .content{font-weight:bold;position:relative;height:70px;}
+		#content .downloads .sessoes li .content strong,
+		#content .downloads .sessoes li .content .date{margin-bottom:5px;padding:0;}
+		#content .downloads .sessoes li .content .date{border:none;font-size:11px;font-weight:normal;}
+		#content .downloads .sessoes li .content .tipo{display:block;margin-bottom:5px;}
+		#content .downloads .sessoes li .content .novo{display:block;}
+	
+		
+		
+	/*Pagina de login==========*/
+		#container .login > .info{margin:10px 0 25px 0;}
+		#container .login form fieldset{float:left;width:270px;height:152px;margin-left:22px;background:url(../images/bg_colunistas.gif)}
+		
+		#container .login form fieldset label{display:block;margin-bottom:9px;}
+		#container .login form fieldset label span{display:block;float:left;width:48px;height:15px;padding-top:5px;font-size:12px;}
+		#container .login form fieldset label input{width:169px;height:20px;padding:0 5px;}
+		#container .login form fieldset label.labelEmail,
+		#container .login form fieldset label.labelSenha{background:url(input1.png) no-repeat 48px 0;}
+		
+		#container .login form fieldset .title{width:170px;text-align:center;font-size:15px;margin:20px auto;}
+		#container .login form fieldset label + label{margin-left:24px;}
+		#container .login form fieldset .esqueceu{float:left;margin-left:73px;margin-right:20px;}
+		#container .login form fieldset .esqueceu a{font-size:11px}
+		#container .login form fieldset .btSubmit input{width:36px;height:21px;cursor:pointer;background:url(../images/bt_ok2.png) no-repeat;}
+		
+	/*box de novo usuario*/
+		#container .login form .novoUsuario label + label{text-align:center;font-size:12px;margin-left:0;}
+		#container .login form .novoUsuario a{display:block;margin-bottom:5px;}
+		#container .login form .novoUsuario .btSubmit{margin-top:30px;}
+		#container .login form .novoUsuario .btSubmit a{display:block;width:44px;height:25px;margin:0 auto;text-indent:-99999px;background:url(../images/bt_ok3.png) no-repeat;}
+		
+		#container .login .infoAcesso{clear:both;float:left;width:100%;margin-top:30px;padding-top:20px;font-size:12px;}
+		#container .login .infoAcesso strong{margin-top:15px;}
+		#container .login .infoAcesso ul{margin:17px;}
+		#container .login .infoAcesso ul li{list-style:inside;margin-bottom:4px;}
+		#container .login .infoAcesso p{margin-bottom:5px;}
+		
+		#container .content form .novoUsuario .receberInfo .jNiceWrapper input.jNiceHidden{display:inline !important;width:auto; height: 10px; }
+		
+		#container .participe form fieldset span.termo { width: 356px !important; text-align: left; }
+	
+	
+	
+	/*box de Busca avançada*/
+		#container form .buscaAvancada label + label{text-align:center;font-size:12px;margin-left:0;}
+		#container form .buscaAvancada .btSubmit{margin-top:30px;}
+		#container form .buscaAvancada .btSubmit input{width:44px;height:25px;background:url(../images/bt_ok3.png) no-repeat;}
+		
+		#container form .buscaAvancada .palavra span{width:166px;}
+		
+		#container form .buscaAvancada .de{margin-left:65px;}
+		#container form .buscaAvancada .de span{width:24px;}
+		#container form .buscaAvancada .ate span{width:20px;}
+		
+		#container form .buscaAvancada .pesquisaEmText{clear:both;float:left;}
+		#container form .buscaAvancada .pesquisaEmText span{width:163px;}
+		#container form .buscaAvancada .pesquisaEm{float:left;}
+		
+		#container form .buscaAvancada .btSubmit{clear:both;text-align:right;padding-right:25px;width:550px;}
+		
+		#container form fieldset.buscaAvancada label.data,
+		#container form fieldset.buscaAvancada label.dia,
+		#container form fieldset.buscaAvancada label.mes,
+		#container form fieldset.buscaAvancada label.ano{margin-right:2px;}
+	
+	
+	
+	
+	
+	/*box de Cadastre-se*/
+		#container .content form .cadastro label + label{font-size:12px;margin-left:0;}
+		#container .content form .cadastro .btSubmit{margin-top:30px;text-align:right;margin-right:25px;float:right;}
+		#container .content form .cadastro .btSubmit input{width:44px;height:25px;background:url(../images/bt_ok3.png) no-repeat;}
+		
+		#container .content form .alterarCadastro{min-height:490px;}
+		#container .content form .alterarCadastro .btSubmit{clear:both;}
+		
+		#container .content form .cadastro .cpf{width:313px;float:left;}
+		#container .content form .cadastro .cpf .jNiceInputWrapper{width:112px;background-image:url(../images/input0.png) ;}
+		#container .content form .cadastro .cpf input{width:110px;}
+		
+		#container .content form .cadastro .cpfInfo{line-height:20px;font-size:11px;}
+		#container .content form .cadastro .cpfInfo  a{font-size:9px;margin-left:5px;}
+		
+		
+		#container .content form .cadastro .data{clear:both;}
+		
+		#container .content form .cadastro .sexoText{clear:both;float:none;}
+		#container .content form .cadastro .sexo{height:20px;float:left;clear:none;}
+	
+		#container .content form .cadastro > span{float:left;}
+		
+		
+		#container .content form .cadastro .pais{width:368px;float:left;}
+		#container .content form .cadastro .pais .jNiceInputWrapper{width:165px;background-image:url(../images/input1.png)}
+		#container .content form .cadastro .pais input{width:164px;}
+		
+		#container .content form .cadastro .cep{width:160px;float:left;}
+		#container .content form .cadastro .cep span{width:25px;}
+		#container .content form .cadastro .cep .jNiceInputWrapper{width:112px;background-image:url(../images/input0.png);}
+		#container .content form .cadastro .cep input{width:112px;}
+		
+		#container .content form .cadastro .cepInfo{float:left;line-height:20px;font-size:11px;}
+		
+		#container .content form .cadastro .senhaInfo{
+			clear:both;
+			float:left;
+			margin:25px 0;
+			width:90%;
+			text-align:right;
+			font-size:11px;}
+			
+		#container .content form .cadastro .receberInfo{clear:both;line-height:20px;margin-left:95px;font-size:11px;}
+		#container .content form .cadastro .receberInfo .jNiceWrapper{width:auto;}
+		#container .content form .cadastro .receberInfo .jNiceWrapper input.jNiceHidden{display:block !important;width:auto;}
+		
+		#container .content form .cadastro .senhaInfo{clear:both;}
+		
+		#container .content form .cadastro .senha{width:312px;float:left;}
+		#container .content form .cadastro .senha .jNiceInputWrapper{width:112px;background-image:url(../images/input0.png)}
+		#container .content form .cadastro .senha input{width:110px;}
+		
+		#container .content form .cadastro .coSenha{width:265px;float:left;}
+		#container .content form .cadastro .coSenha span{width:121px;}
+		#container .content form .cadastro .coSenha .jNiceInputWrapper{width:112px;background-image:url(../images/input0.png);}
+		#container .content form .cadastro .coSenha input{width:110px;}
+		
+		
+		#container .content form .cadastro .lembrete{margin-right:50px;}
+		#container .content form .cadastro .lembrete .jNiceInputWrapper{width:285px;background-image: url(../images/input3.png);}
+		#container .content form .cadastro .lembrete input{width:280px;}
+		
+		#container .content form .cadastro .campoObrigatorio{float:right;font-size:10px;}
+		
+		
+		
+		
+		#container .content form .cadastro .outrasOpcoes{width:430px;clear:both;margin:22px auto 0 auto;}
+		#container .content form .cadastro .outrasOpcoes .title{font-size:12px;}
+		#container .content form .cadastro .outrasOpcoes li + li{display:inline-block;float:left;height:20px;width:200px;margin-left:10px;}
+		#container .content form .cadastro .outrasOpcoes li label span{width:auto;height:12px;font-size:11px;}
+		#container .content form .cadastro .outrasOpcoes li label input{display:block !important;float:left;width:13px;height:13px;margin-top:3px;}
+	
+	
+	/*Modal de CPF*/
+	.texto{width:355px;height:98px;margin:5px auto 0 auto;padding-top:5px;background:url(../images/bt_texto_modal_cpf.png) no-repeat left top;}
+	.texto p{width:355px;margin:0 auto;text-align:center;font-size:11px;}
+	.texto p + p{margin-top:15px;}
+
+	
+	
+	
+	
+	
+	
+	
+	/*Formulario de Participe*/
+	
+	/*Fique por Dentro*/
+		#content .participe .sessoes .vejaMais{border:none;}
+		/*Herda classe de listagem, ajusta Tamanho da imagem (corner2)*/
+		#content .participe .sessoes{border:none;}
+		#content .participe .sessoes > li.title{float:left;clear:none;width:289px;}
+		#content .participe .sessoes li.descricao_title{clear:both;font-size:11px;margin-top:19px;}
+		#content .participe .sessoes  .outrasMaterias li{width:308px;}
+		#content .participe .sessoes .vejaMais{width:auto;margin-left:125px;}
+		#content .participe .sessoes .outrasMaterias{clear:both;width:100%;margin-top:10px;margin-bottom:30px;padding-top:10px;}
+		#content .participe .sessoes .outrasMaterias ul li{border-bottom:none;padding:0;}
+		#content .participe .sessoes .outrasMaterias ul li.border{clear:both;width:100%;}
+		#content .participe .sessoes .outrasMaterias ul li.links{width:100%;}
+		#content .participe .sessoes .outrasMaterias ul li.links > .vejaMais{float:right;clear:none;width:auto;padding-left:15px;}
+		#content .participe .sessoes li .corner2{width:121px;height:86px;}
+	
+	
+		/*Formulário*/	
+		#container .participe > .info{fmargin:10px 0 25px 0;}
+		#container .participe form fieldset{float:left;width:623px;padding-top:25px;padding-bottom:10px;margin-bottom:10px;background:url(../images/bg_colunistas.gif)}
+		
+		#container .participe form fieldset label{float:left;margin-bottom:9px;}
+		#container .participe form fieldset label > span{display:block;float:left;width:178px;text-align:right;margin-right:5px;line-height:20px;font-size:12px;}
+		#container .participe form fieldset label.uf span.required{display:block;float:left;width:178px;text-align:right;margin-right:5px;line-height:20px;font-size:12px;}
+		#container .participe form fieldset label .jNiceInputWrapper{float:left;width:369px;height:20px;padding:0 5px;background:url(../images/input2.png) no-repeat;}
+		#container .participe form fieldset label input{width:369px;height:20px;}
+			
+		
+		/*Data de nascimento*/
+		#container .participe form fieldset .data,
+		#container .participe form fieldset .dia,
+		#container .participe form fieldset .mes,
+		#container .participe form fieldset .ano{float:left;height:20px;margin-right:10px;}
+		#container .participe form fieldset .data{margin-right:0;}
+		#container .participe form fieldset .data select,
+		#container .participe form fieldset .dia select,
+		#container .participe form fieldset .mes select,
+		#container .participe form fieldset .ano select{width:70px;}
+		#container .participe form fieldset .ano{margin-right:40px;}/*ajusta erro no IE7*/
+		
+		#container .participe form fieldset .cidade{float:left;width:488px;}
+		#container .participe form fieldset .cidade .jNiceInputWrapper{float:left;width:295px;background:url(../images/input3.png) no-repeat;}
+		#container .participe form fieldset .cidade input{width:290px;}
+
+		
+		
+		
+		
+		
+		#container .participe form fieldset .uf{width:75px;height:20px;float:left;}
+		#container .participe form fieldset .uf select{width:60px;}
+		#container .participe form fieldset .uf  > .jNiceWrapper{width:60px;float:left;}
+		#container .participe form fieldset .uf .required{display:block;float:right;margin-left:5px;}
+		
+		#container .participe form fieldset .historia .jNiceInputWrapper{width:369px;;height:160px;padding:5px;background:url(../images/textarea.png) no-repeat}
+		#container .participe form fieldset .historia textarea{width:360px;;height:150px;padding:5px;}
+		
+		#container .participe form fieldset .campoObrigatorio{float:left;margin-left:180px;margin-right:10px;font-size:11px;line-height:25px;}
+		
+		#container .participe form fieldset .btSubmit .submit,
+		#container .participe form fieldset .btSubmit .reset{width:58px;height:25px;cursor:pointer;}
+		#container .participe form fieldset .btSubmit .submit{background:url(../images/bt_enviar.png) no-repeat;}
+		#container .participe form fieldset .btSubmit .reset{background:url(../images/bt_limpar.png) no-repeat;}
+	
+	
+	/*Lembrar senha*/
+		#container #content .content form .lembraSenha{background:none;height:auto;padding-top:0;}
+		#container form .lembraSenha label{display:block;float:left;height:25px;}
+		#container #content .content form .lembraSenha label span{display:block;width:auto;float:left;line-height:21px;margin-right:5px;font-weight:bold;}
+		#container form .lembraSenha .jNiceInputWrapper{display:block;float:left;width:295px;height:20px;margin-right:12px;background:url(../images/input3.png) transparent  no-repeat;}
+		#container form .lembraSenha .mail{margin-right:10px;}
+		#container form .lembraSenha .btSubmit input{width:58px;height:25px;cursor:pointer;background:url(../images/bt_enviar.png) no-repeat;}
+	
+	
+	
+	/*Botão de Voltar*/
+	#container .resultadoTeste .descricaoPontuacao .botoes{padding-top:20px;}
+	#container .resultadoTeste .descricaoPontuacao .btRefazer,
+	#container .resultadoTeste .descricaoPontuacao .btFazerOutro{
+		float:right;
+		display:block;
+		height:25px;
+		text-indent:-99999px;}
+	#container .resultadoTeste .descricaoPontuacao .btRefazer{
+		width:137px;
+		margin-right:10px;
+		background:url(../images/bt_refazer.gif);}
+	#container .resultadoTeste .descricaoPontuacao .btFazerOutro{	
+		width:142px;
+		background:url(../images/bt_fazer_outro.gif);}
+
+	
+
+
+
+
+
+	/*Validação de compos dos formularios*/
+	span.validation-summary-errors{display:block;padding-bottom:2px;font-size:12px;margin-bottom:5px;}
+	ul.validation-summary-errors{margin-bottom:20px;color:#8F2E5A;font-size:11px;margin-left:10px;}
+	ul.validation-summary-errors li{margin-bottom:2px;}
+
+
+
+
+
+.disclaimer{
+	width:618px;
+	height:96px;
+	background:transparent url(../images/bg_disclaimer.gif) repeat-x 0 0;
+}
+.disclaimer .col1{
+	width:84%;
+	padding-left:96px;
+	padding-top:5px;
+	background:transparent url(../images/icone_disclaimer.png) no-repeat 23px center;
+}
+
+
+.disclaimer .col1 p{margin-bottom:9px;font-size:11px;}
+
+
+
+
+
+/*Remove alguns CSS RESET do conteudo da materia*/
+#container .detalhe .materia em, #container .detalhe .materia i{font-style:italic;}
+#container .detalhe .materia u{text-decoration:underline;}
+#container .detalhe .materia h1,
+#container .detalhe .materia h2,
+#container .detalhe .materia h3,
+#container .detalhe .materia h4,
+#container .detalhe .materia h5,
+#container .detalhe .materia h6,
+#container .detalhe .materia strong, #container .detalhe .materia strong b{font-weight:bold;}
+#container .detalhe .materia h1{font-size:18px;}
+#container .detalhe .materia h2{font-size:17px;}
+#container .detalhe .materia h3{font-size:16px;}
+#container .detalhe .materia h4{font-size:15px;}
+#container .detalhe .materia h5{font-size:14px;}
+#container .detalhe .materia h6{font-size:13px;}
+#container .detalhe .materia hr{border-bottom:solid 1px #555;}
+#container .detalhe .materia p{margin-bottom:10px;}
+
+
+#container #content div.logado{}
+
+#container #content div.logado a{color: #5C4864;text-decoration:none;font-weight:bold;font-size:11px;}
+
+#container #content div.logado a:hover{text-decoration:underline;}
+
+#container #content div.logado a,
+#container #content div.logado a:hover,
+#container #content div.logado a:visited{outline:medium none;}

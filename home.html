@@ -1,0 +1,798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0082) -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="ctl00_Head1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" async="" src="./home_files/ga.js.download"></script>
+    <script src="./home_files/analytics.js.download" type="text/javascript"></script>
+    <title>Atmosfera Feminina</title>
+    <link rel="stylesheet" type="text/css" href="content/css/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="content/css/print.css">
+
+    <script type="text/javascript" src="content/js/jquery.js"></script>
+    <script type="text/javascript" src="content/js/scrol.js"></script>
+    <script type="text/javascript" src="content/js/busca.js"></script>
+    <script type="text/javascript" src="content/js/jcarousel.js"></script>
+    <script type="text/javascript" src="content/js/publicidade.js"></script>
+
+    <!-- style select -->
+
+    <!-- Modal -->
+    <link rel="stylesheet" type="text/css" href="content/css/lightBox.css">
+    <script type="text/javascript" src="content/js/lightBox.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $(".stepColunistas").jCarouselLite({
+                btnPrev: '.prev',
+                btnNext: '.next',
+                speed: 300,
+                visible: 5,
+                circular: false
+            });
+            $(".publicidadeFunction1").listChange({ timeOut: 5000 });
+            $(".publicidadeFunction2").listChange({ timeOut: 5000 });
+            $(".publicidadeFunction2").listChange({ timeOut: 5000 });
+
+            var url;
+
+            /*Validacao de Links Externos*/
+            $("a").live('click', function () {
+                var link = $(this).attr("href");
+                var regExp = /^(http:\/\/|ftp:\/\/|www.)/;
+
+                if (link.match(regExp)) {
+                    $(".modalLinkExterno, .backgroundModalLinkExterno").fadeIn();
+                    url = link;
+                    return false;
+                }
+            });
+
+            $(".modalLinkExterno .voltar").click(function () {
+                $(".modalLinkExterno, .backgroundModalLinkExterno").fadeOut();
+                return false;
+            });
+
+            $(".modalLinkExterno .continuar").click(function () {
+                window.open(url);
+                $(".modalLinkExterno, .backgroundModalLinkExterno").fadeOut();
+                return false;
+            })
+        });
+    </script>
+
+</head>
+
+<body class="interna">
+    <style>
+        .backgroundModalLinkExterno{
+			display:none;
+			width:100%;
+			height:9000px;
+			position:fixed;
+			background-color:#4F4255;
+			z-index:1009;
+		}
+		.modalLinkExterno{
+			position:fixed;
+			top:50%;
+			left:50%;
+			margin:-90px 0 0 -200px;
+			z-index:1010;
+			width:400px;
+			height:175px;
+			background:url(content/images/linkExterno.png) no-repeat;
+		}
+		.modalLinkExterno p{
+			text-align:center;
+			width:280px;
+			margin:38px auto 0 auto;
+			color:#454545;
+			font-size:11px;
+			font-family:verdana, tahoma, arial;
+		}
+		.modalLinkExterno .voltar, .modalLinkExterno .continuar{display:block;height:25px;text-indent:-99999px;}
+		.modalLinkExterno .voltar{
+			float:left;
+			width:71px;
+			margin:17px 0 22px 30px;
+			background:url(content/images/btVoltarLikExterno.png) no-repeat;
+		}
+		.modalLinkExterno .continuar{
+			float:right;
+			width:88px;
+			margin:17px 30px 22px 0;
+			background:url(content/images/btContinuarLinkExterno.png) no-repeat;
+		}
+	</style>
+
+    <div class="backgroundModalLinkExterno">&nbsp;</div>
+    <div class="modalLinkExterno" style="display:none;">
+        <p>
+            Você está sendo direcionado para outro site.
+            Você deve estar ciente de que a sanofi-aventis não
+            se responsabiliza pelas informações nele contidas.
+            <br><br>
+            Deseja prosseguir?
+        </p>
+        <a href="https://web.archive.org/web/20100905085731/http://www.atmosferafeminina.com.br:80/#" class="voltar">voltar</a>
+        <a href="https://web.archive.org/web/20100905085731/http://www.atmosferafeminina.com.br:80/#" class="continuar">continuar</a>
+    </div>
+
+    <div id="container">
+
+
+        <div id="header">
+            <div id="topo">
+                <h1 class="logotipo">
+                    <a href="home.html">atmosfera feminina</a>
+                </h1>
+                <h2 class="logotipo">
+                    <a href="#" target="_blank">sanofi aventis</a>
+                </h2>
+            </div>
+            <div id="banner">
+                <a class="cadastrese" href="cadastre_se.html">Cadastre-se no Atmosfera Feminina</a>
+                <img alt="atmosfera feminina banner" src="content/images/header_home.jpg" title="atmosfera feminina banner">
+
+            </div>
+            <ul id="bar">
+                <li class="left">&nbsp;</li>
+                <li class="saude"><a href="saude.html">Saúde</a></li>
+                <li class="familia"><a href="familia.html">Família</a></li>
+                <li class="vida"><a href="vida.html">Vida</a></li>
+            </ul>
+
+            <div id="canal">
+                <ul>
+
+                    <li>
+                        <a href="Canal_Higiene_intima">Canal Higiene íntima</a>
+                    </li>
+
+                    <li>
+                        <a href="Colunistas">Colunistas</a>
+                    </li>
+
+                    <li>
+                        <a href="Fique_por_Dentro">Fique por Dentro</a>
+                    </li>
+
+                    <li>
+                        <a href="Participe">Participe</a>
+                    </li>
+
+                    <li>
+                        <a href="Servicos">Serviços</a>
+                    </li>
+
+                    <li>
+                        <a href="Cadastre_se">Cadastre-se</a>
+                    </li>
+
+                </ul>
+            </div>
+            <ul class="news_busca">
+
+                <li class="newsticker">
+                    <div class="btScroll">
+                        <img src="content/images/bt_up.png" class="scrolTop" alt="notícia anterior">
+                        <img src="content/images/bt_down.png" class="scrolBottom" alt="próxima notícia">
+                    </div>
+                    <div id="frameScrol">
+                        <div id="contentScrol" class="content" style="top: -32px;">
+                            <p><a href="Fique_por_Dentro/Noticias/Estudo_revela__pratica_de_exercicios_pode_ajudar_a_diminuir_o_uso_de_medicamentos">Estudo
+                                    revela: prática de exercicios pode ajudar a diminuir o uso de medicamentos</a></p>
+                            <p><a href="Fique_por_Dentro/Noticias/Levantamento_da_Fundacao_Mundial_do_Diabetes_aponta_aumento_de_65__da_doenca_nos_proximos_20_anos">Levantamento
+                                    da Fundação Mundial do Diabetes aponta aumento de 65% da doença nos próximos 20
+                                    anos</a></p>
+                            <p><a href="Fique_por_Dentro/Noticias/Doacao_de_medula_ossea_voluntaria_pode_salvar_vidas">Doação
+                                    de medula óssea voluntária pode salvar vidas</a></p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="busca">
+                    <form action="Sobre_o_Atmosfera_Feminina.mvc/Busca_avancada" method="post">
+                        <fieldset>
+                            <label class="labelCampo">
+                                <input class="campo" id="campo_busca" name="campo_busca" type="text" value="Busca"
+                                    style="background: none !important;">
+                            </label>
+                            <label><input type="submit" value="" class="bt_ok"></label>
+                        </fieldset>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+
+            <link rel="Stylesheet" type="text/css" href="content/images/publicidade_home.css">
+
+            <ul class="sessoes">
+
+                <li class="saude">
+                    <h4 class="title">Saúde</h4>
+                    <div class="corner2">
+                        <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                        <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                        <img alt="Conheça as técnicas que clareiam os dentes" src="content/images/placeholder2.jpg"
+                            title="Conheça as técnicas que clareiam os dentes">
+                    </div>
+                    <p class="content">
+                        <strong>Higiene bucal</strong>
+                        <a href="Saude/Saude_para_todos/Higiene_bucal/Conheca_as_tecnicas_que_clareiam_os_dentes">Conheça
+                            as técnicas que clareiam os dentes</a>
+                    </p>
+                </li>
+
+                <li class="familia">
+                    <h4 class="title">Família</h4>
+                    <div class="corner2">
+                        <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                        <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                        <img alt="5 cuidados essenciais para grávidas vegetarianas" src="content/images/placeholder2.jpg"
+                            title="5 cuidados essenciais para grávidas vegetarianas">
+                    </div>
+                    <p class="content">
+                        <strong>Alimentação</strong>
+                        <a href="Familia/Gestantes/Alimentacao/5_cuidados_essenciais_para_gravidas_vegetarianas">5
+                            cuidados essenciais para grávidas vegetarianas</a>
+                    </p>
+                </li>
+
+                <li class="vida">
+                    <h4 class="title">Vida</h4>
+                    <div class="corner2">
+                        <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                        <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                        <img alt="Aprenda a relaxar respirando" src="content/images/placeholder1.jpg" title="Aprenda a relaxar respirando">
+                    </div>
+                    <p class="content">
+                        <strong>Relaxe</strong>
+                        <a href="Vida/Bem_estar/Relaxe/Aprenda_a_relaxar_respirando">Aprenda a relaxar respirando</a>
+                    </p>
+                </li>
+
+                <li class="pergunteDotor comVejaMais noMarginLeft">
+                    <h4 class="title">Pergunte ao especialista</h4>
+                    <div class="corner2">
+                        <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                        <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                        <img alt="Problemas com tireoide?" src="content/images/placeholder2.jpg" title="Problemas com tireoide?">
+                    </div>
+                    <p class="content">
+                        <strong>Problemas com tireoide?</strong>
+                        <a href="Participe/Pergunte_ao_especialista/Problemas_com_tireoide_">Problemas com tireoide? -
+                            Dra. Marcia Jablonka Kelman</a>
+                    </p>
+                    <div class="vejaMais">
+                        <a href="Participe/Pergunte_ao_especialista">Veja as respostas de meses anteriores</a>
+                    </div>
+                </li>
+
+                <li class="higieneIntima comVejaMais">
+                    <h4 class="title">Canal Higiene íntima</h4>
+                    <div class="corner2">
+                        <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                        <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                        <img alt="Como deixar o bebê limpinho e saudável" src="content/images/placeholder1.jpg" title="Como deixar o bebê limpinho e saudável">
+                    </div>
+                    <p class="content">
+                        <strong>Cuidados</strong>
+                        <a href="Canal_Higiene_intima/Bebe/Cuidados/Como_deixar_o_bebe_limpinho_e_saudavel">Como deixar
+                            o bebê limpinho e saudável</a>
+                    </p>
+                    <div class="vejaMais">
+                        <a href="Canal_Higiene_intima">Saiba mais sobre higiene íntima</a>
+                    </div>
+                </li>
+
+            </ul>
+
+
+
+            <ul class="publicidade">
+
+                <li>
+                    <ul class="publicidadeFunction1">
+                        <li>
+                            <object type="application/x-shockwave-flash" data="content/swf/127_original.swf" width="234"
+                                height="60">
+                                <param name="movie" value="content/swf/127_original.swf">
+                                <embed src="content/swf/127_original.swf" width="234" height="60" type="application/x-shockwave-flash"
+                                    pluginspage="http://www.macromedia.com/go/getflashplayer">
+                            </object>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <ul class="publicidadeFunction2">
+                        <li>
+                            <object type="application/x-shockwave-flash" data="content/swf/144_original.swf" width="234"
+                                height="60">
+                                <param name="movie" value="content/swf/144_original.swf">
+                                <embed src="content/swf/144_original.swf" width="234" height="60" type="application/x-shockwave-flash"
+                                    pluginspage="http://www.macromedia.com/go/getflashplayer">
+                            </object>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <br class="clear">
+
+            <div class="colunistas">
+                <h4 class="title">Colunistas</h4>
+                <a class="vejaMais" href="Colunistas">Veja todos os colunistas</a>
+                <div class="stepColunistas" style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; width: 710px;">
+                    <span class="prev">prev</span>
+                    <div class="stepContent">
+                        <ul style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; width: 2698px; left: 0px;">
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Carmen Ines" src="content/images/9.jpg" title="Carmen Ines">
+                                </div>
+                                <span class="name"><a href="Colunistas/Carmen_Ines">Carmen Ines</a></span>
+                                <p class="descricao">
+                                    <strong>Cirurgiã Dentista</strong>
+                                    <a href="Colunistas/Carmen_Ines/Como_podemos_proteger_nossos_dentes_da_paixao_pelos_doces_">Como
+                                        podemos proteger nossos dentes da paixão pelos doces?</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Renata Tkacz" src="content/images/13.jpg" title="Renata Tkacz">
+                                </div>
+                                <span class="name"><a href="Colunistas/Renata_Tkacz">Renata Tkacz</a></span>
+                                <p class="descricao">
+                                    <strong>Dermatologia</strong>
+                                    <a href="Colunistas/Renata_Tkacz/Acne_e_Inverno">Acne e Inverno</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Bruna Dinalli" src="content/images/21.jpg" title="Bruna Dinalli">
+                                </div>
+                                <span class="name"><a href="Colunistas/Bruna_Dinalli">Bruna Dinalli</a></span>
+                                <p class="descricao">
+                                    <strong>Nutrição</strong>
+                                    <a href="Colunistas/Bruna_Dinalli/Amamentar_previne_Sindrome_Metabolica">Amamentar
+                                        previne Síndrome Metabólica</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Marcia Kelman" src="content/images/11.jpg" title="Marcia Kelman">
+                                </div>
+                                <span class="name"><a href="Colunistas/Marcia_Kelman">Marcia Kelman</a></span>
+                                <p class="descricao">
+                                    <strong>Clínica Geral</strong>
+                                    <a href="Colunistas/Marcia_Kelman/O_que_sao_vitaminas_">O que são
+                                        vitaminas?</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Denise Andrade" src="content/images/16.jpg" title="Denise Andrade">
+                                </div>
+                                <span class="name"><a href="Colunistas/Denise_Andrade">Denise Andrade</a></span>
+                                <p class="descricao">
+                                    <strong>Direito de Família</strong>
+                                    <a href="Colunistas/Denise_Andrade/PEC_do_Divorcio__A_evolucao_e_revolucao_do_Direito_de_Familia">PEC
+                                        do Divórcio: A evolução e revolução do Direito de Família</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Gilse Prates" src="content/images/18.jpg" title="Gilse Prates">
+                                </div>
+                                <span class="name"><a href="Colunistas/Gilse_Prates">Gilse Prates</a></span>
+                                <p class="descricao">
+                                    <strong>Geriatria</strong>
+                                    <a href="Colunistas/Gilse_Prates/Cuidados_com_os_pes">Cuidados com os pés</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Christiani Poço" src="content/images/14.jpg" title="Christiani Poço">
+                                </div>
+                                <span class="name"><a href="Colunistas/Christiani_Poco">Christiani Poço</a></span>
+                                <p class="descricao">
+                                    <strong>Endocrinologia</strong>
+                                    <a href="Colunistas/Christiani_Poco/Hipotireoidismo__mais_comum_do_que_voce_imagina">Hipotireoidismo:
+                                        mais comum do que você imagina</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Andréa Barbosa" src="content/images/22.jpg" title="Andréa Barbosa">
+                                </div>
+                                <span class="name"><a href="Colunistas/Andrea_Barbosa">Andréa Barbosa</a></span>
+                                <p class="descricao">
+                                    <strong>Oftalmologia</strong>
+                                    <a href="Colunistas/Andrea_Barbosa/Sindrome_de_Visao_do_Computador">Síndrome
+                                        de Visão do Computador</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Márcia Atik" src="content/images/8.jpg" title="Márcia Atik">
+                                </div>
+                                <span class="name"><a href="Colunistas/Marcia_Atik">Márcia Atik</a></span>
+                                <p class="descricao">
+                                    <strong>Sexualidade</strong>
+                                    <a href="Colunistas/Marcia_Atik/Guerra_e_paz_entre_os_sexos">Guerra e paz
+                                        entre os sexos</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Dorit Wallach Verea" src="content/images/23.jpg" title="Dorit Wallach Verea">
+                                </div>
+                                <span class="name"><a href="Colunistas/Dorit_Wallach_Verea">Dorit Wallach
+                                        Verea</a></span>
+                                <p class="descricao">
+                                    <strong>Psicóloga</strong>
+                                    <a href="Colunistas/Dorit_Wallach_Verea/Dependencia_de_internet">Dependência
+                                        de internet</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Leonard F. Verea" src="content/images/25.jpg" title="Leonard F. Verea">
+                                </div>
+                                <span class="name"><a href="Colunistas/Leonard_F__Verea">Leonard F. Verea</a></span>
+                                <p class="descricao">
+                                    <strong>Psiquiatria</strong>
+                                    <a href="Colunistas/Leonard_F__Verea/Temos_o_cerebro_na_prisao">Temos o
+                                        cérebro na prisão</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Vivian Behar" src="content/images/24.jpg" title="Vivian Behar">
+                                </div>
+                                <span class="name"><a href="Colunistas/Vivian_Behar">Vivian Behar</a></span>
+                                <p class="descricao">
+                                    <strong>Psicóloga</strong>
+                                    <a href="Colunistas/Vivian_Behar/Como_ser_assertiva_sem_ser_agressiva">Como
+                                        ser assertiva sem ser agressiva</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Elizabeth Zamerul" src="content/images/26.jpg" title="Elizabeth Zamerul">
+                                </div>
+                                <span class="name"><a href="Colunistas/Elizabeth_Zamerul">Elizabeth Zamerul</a></span>
+                                <p class="descricao">
+                                    <strong>Psiquiatria</strong>
+                                    <a href="Colunistas/Elizabeth_Zamerul/Maridos_nao_apoiam_a_carreira_da_esposa_">Maridos
+                                        não apóiam a carreira da esposa?</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Heitor Buzzoni" src="content/images/27.jpg" title="Heitor Buzzoni">
+                                </div>
+                                <span class="name"><a href="Colunistas/Heitor_Buzzoni">Heitor Buzzoni</a></span>
+                                <p class="descricao">
+                                    <strong>Urologia</strong>
+                                    <a href="Colunistas/Heitor_Buzzoni/A_mulher_e_a_urologia___Cistite">A
+                                        mulher e a urologia - Cistite</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt=" Ricardo Teixeira" src="content/images/20.jpg" title=" Ricardo Teixeira">
+                                </div>
+                                <span class="name"><a href="Colunistas/_Ricardo_Teixeira"> Ricardo Teixeira</a></span>
+                                <p class="descricao">
+                                    <strong>Neurologia</strong>
+                                    <a href="Colunistas/_Ricardo_Teixeira/A_felicidade_faz_bem_a_saude_e_e_mesmo_contagiosa">A
+                                        felicidade faz bem à saúde e é mesmo contagiosa</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Waldemir Rezende" src="content/images/19.jpg" title="Waldemir Rezende">
+                                </div>
+                                <span class="name"><a href="Colunistas/Waldemir_Rezende">Waldemir Rezende</a></span>
+                                <p class="descricao">
+                                    <strong>Ginecologia</strong>
+                                    <a href="Colunistas/Waldemir_Rezende/Diretrizes_para_diagnostico_e_tratamento_precoce_das_doencas_das_mamas">Diretrizes
+                                        para diagnóstico e tratamento precoce das doenças das mamas</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Pérola Plapler" src="content/images/17.jpg" title="Pérola Plapler">
+                                </div>
+                                <span class="name"><a href="Colunistas/Perola_Plapler">Pérola Plapler</a></span>
+                                <p class="descricao">
+                                    <strong>Fisiatria</strong>
+                                    <a href="Colunistas/Perola_Plapler/Fatores_de_risco_relacionados_a_genero_e_raca">Fatores
+                                        de risco relacionados a gênero e raça</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Renato Kfouri" src="content/images/15.jpg" title="Renato Kfouri">
+                                </div>
+                                <span class="name"><a href="Colunistas/Renato_Kfouri">Renato Kfouri</a></span>
+                                <p class="descricao">
+                                    <strong>Pediatria</strong>
+                                    <a href="Colunistas/Renato_Kfouri/Doencas_de_inverno__proteja_seu_filho">Doenças
+                                        de inverno: proteja seu filho</a>
+                                </p>
+                            </li>
+
+                            <li style="overflow: hidden; float: left; width: 120px;">
+                                <div class="corner1">
+                                    <span class="tl">&nbsp;</span><span class="tr">&nbsp;</span>
+                                    <span class="bl">&nbsp;</span><span class="br">&nbsp;</span>
+                                    <img alt="Luiza Ricotta" src="content/images/12.jpg" title="Luiza Ricotta">
+                                </div>
+                                <span class="name"><a href="Colunistas/Luiza_Ricotta">Luiza Ricotta</a></span>
+                                <p class="descricao">
+                                    <strong>Psicóloga</strong>
+                                    <a href="Colunistas/Luiza_Ricotta/Convivendo_com_conflitos_de_toda_ordem">Convivendo
+                                        com conflitos de toda ordem</a>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <span class="next">next</span>
+                </div>
+            </div>
+            <ul class="narede">
+                <li class="title">Atmosfera na rede</li>
+                <li class="twitter"><a href="http://www.twitter.com" target="_blank">twitter</a></li>
+                <li class="orkut"><a href="http://www.orkut.com.br" target="_blank">orkut</a></li>
+                <li class="myspace"><a href="http://www.myspace.com" target="_blank">myspace</a></li>
+                <li class="facebook"><a href="http://www.facebook.com" target="_blank">facebook</a></li>
+            </ul>
+            <br class="clear">
+
+
+
+        </div>
+
+
+        <script type="text/javascript">
+            function Footer() {
+                var divs = $('#teste div');
+                var max_height = 210;
+                var height = 0;
+                var li = 0;
+                $('.sitemap').append('<li id="' + li + '">');
+                for (var i = 0; i < divs.length; i++) {
+                    if (divs[i].clientHeight + height > max_height) {
+                        height = divs[i].clientHeight;
+                        li++;
+                        $('.sitemap').append('<li id="' + li + '">');
+                    }
+                    else {
+                        height += divs[i].clientHeight;
+                    }
+
+                    $('#teste #' + divs[i].id).remove();
+                    $('.sitemap li#' + li).append(divs[i]);
+                }
+            }
+        </script>
+
+        <div id="footer">
+            <ul class="sitemap">
+                <li id="0">
+                    <div id="Saude">
+                        <ul>
+                            <li class="title"><a href="Saude">Saúde</a></li>
+
+                            <li><a href="Saude/Saude_para_todos">Saúde para todos</a></li>
+
+                            <li><a href="Saude/Saude_da_mulher">Saúde da mulher</a></li>
+
+                        </ul>
+                    </div>
+                    <div id="Familia">
+                        <ul>
+                            <li class="title"><a href="Familia">Família</a></li>
+
+                            <li><a href="Familia/Gestantes">Gestantes</a></li>
+
+                            <li><a href="Familia/Bebes">Bebês</a></li>
+
+                            <li><a href="Familia/Criancas">Crianças</a></li>
+
+                            <li><a href="Familia/Adolescentes">Adolescentes</a></li>
+
+                        </ul>
+                    </div>
+                    <div id="Vida">
+                        <ul>
+                            <li class="title"><a href="Vida">Vida</a></li>
+
+                            <li><a href="Vida/Beleza">Beleza</a></li>
+
+                            <li><a href="Vida/Vida_profissional">Vida profissional</a></li>
+
+                            <li><a href="Vida/Bem_estar">Bem-estar</a></li>
+
+                            <li><a href="Vida/Alimentacao">Alimentação</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li id="1">
+                    <div id="Servicos">
+                        <ul>
+                            <li class="title"><a href="Servicos">Serviços</a></li>
+
+                            <li><a href="Servicos/Calculadoras_medicas">Calculadoras médicas</a></li>
+
+                            <li><a href="Servicos/Colecao_Comida_que_Cuida">Coleção Comida que Cuida</a></li>
+
+                            <li><a href="Servicos/Exames_medicos">Exames médicos</a></li>
+
+                            <li><a href="Servicos/Glossario">Glossário</a></li>
+
+                            <li><a href="Servicos/Links_interessantes">Links interessantes</a></li>
+
+                        </ul>
+                    </div>
+                    <div id="Canal_Higiene_intima">
+                        <ul>
+                            <li class="title"><a href="Canal_Higiene_intima">Canal Higiene íntima</a></li>
+
+                            <li><a href="Canal_Higiene_intima/Teen">Teen</a></li>
+
+                            <li><a href="Canal_Higiene_intima/Bebe">Bebê</a></li>
+
+                            <li><a href="Canal_Higiene_intima/Mulher">Mulher</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li id="2">
+                    <div id="Sobre_o_Atmosfera_Feminina">
+                        <ul>
+                            <li class="title"><a href="Sobre_o_Atmosfera_Feminina">Sobre o Atmosfera Feminina</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Cadastre_se">Cadastre-se</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Alterar_cadastro">Alterar cadastro</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Fale_Conosco">Fale Conosco</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Quem_somos">Quem somos</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Imprensa">Imprensa</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Perguntas_frequentes">Perguntas frequentes</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Busca_avancada">Busca avançada</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Indique_o_site">Indique o site</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Privacidade">Privacidade</a></li>
+
+                        </ul>
+                    </div>
+                    <div id="Colunistas">
+                        <ul>
+                            <li class="title"><a href="Colunistas">Colunistas</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li id="3">
+                    <div id="Fique_por_Dentro">
+                        <ul>
+                            <li class="title"><a href="Fique_por_Dentro">Fique por Dentro</a></li>
+
+                            <li><a href="Fique_por_Dentro/Agenda">Agenda</a></li>
+
+                            <li><a href="Fique_por_Dentro/Noticias">Notícias</a></li>
+
+                            <li><a href="Fique_por_Dentro/Entrevistas">Entrevistas</a></li>
+
+                        </ul>
+                    </div>
+                    <div id="Participe">
+                        <ul>
+                            <li class="title"><a href="Participe">Participe</a></li>
+
+                            <li><a href="Participe/Sua_historia">Sua história</a></li>
+
+                            <li><a href="Participe/Pergunte_ao_especialista">Pergunte ao especialista</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    
+
+        <br class="clear">
+
+        <div class="footerInfo">
+            <p>
+                <strong>Atmosfera Feminina - Um serviço sanofi-aventis</strong><br>
+                Av. Major Sylvio de Magalhães Padilha, 5.200 - Ed. Atlanta, Jardim Morumbi - São Paulo, SP - CEP:
+                05693-000
+                SAC: 0800-703 0014 (de 2ª à 6ª feira das 9 às 17 hs)
+            </p>
+
+            <p>
+                <strong> Nosso conteúdo serve para seu conhecimento e informação.
+                    Em caso de dúvida, procure sempre seu médico para orientá-la quanto ao melhor tratamento e
+                    conduta.</strong>
+            </p>
+
+            <p>
+                Copyright © 2005-2010 sanofi-aventis. Todos os direitos reservados.
+                <strong> Última atualização:</strong> 05/09/2010
+            </p>
+        </div>
+    </div>
+</body>
+</html>

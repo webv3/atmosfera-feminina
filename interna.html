@@ -1,0 +1,625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0082) -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="ctl00_Head1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" async="" src="./home_files/ga.js.download"></script>
+    <script src="./home_files/analytics.js.download" type="text/javascript"></script>
+    <title>Atmosfera Feminina</title>
+    <link rel="stylesheet" type="text/css" href="content/css/style.css">
+    <link rel="stylesheet" type="text/css" href="content/css/rating.css">
+    <link rel="stylesheet" type="text/css" media="print" href="content/css/print.css">
+
+    <script type="text/javascript" src="content/js/jquery.js"></script>
+    <script type="text/javascript" src="content/js/scrol.js"></script>
+    <script type="text/javascript" src="content/js/busca.js"></script>
+    <script type="text/javascript" src="content/js/jcarousel.js"></script>
+    <script type="text/javascript" src="content/js/publicidade.js"></script>
+    <script type="text/javascript" src="content/js/jquery.rating.js"></script>
+
+
+
+    <!-- style select -->
+
+    <!-- Modal -->
+    <link rel="stylesheet" type="text/css" href="content/css/lightBox.css">
+    <script type="text/javascript" src="content/js/lightBox.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $(".stepColunistas").jCarouselLite({
+                btnPrev: '.prev',
+                btnNext: '.next',
+                speed: 300,
+                visible: 5,
+                circular: false
+            });
+            $(".publicidadeFunction1").listChange({ timeOut: 5000 });
+            $(".publicidadeFunction2").listChange({ timeOut: 5000 });
+            $(".publicidadeFunction2").listChange({ timeOut: 5000 });
+
+            var url;
+
+            /*Validacao de Links Externos*/
+            $("a").live('click', function () {
+                var link = $(this).attr("href");
+                var regExp = /^(http:\/\/|ftp:\/\/|www.)/;
+
+                if (link.match(regExp)) {
+                    $(".modalLinkExterno, .backgroundModalLinkExterno").fadeIn();
+                    url = link;
+                    return false;
+                }
+            });
+
+            $(".modalLinkExterno .voltar").click(function () {
+                $(".modalLinkExterno, .backgroundModalLinkExterno").fadeOut();
+                return false;
+            });
+
+            $(".modalLinkExterno .continuar").click(function () {
+                window.open(url);
+                $(".modalLinkExterno, .backgroundModalLinkExterno").fadeOut();
+                return false;
+            })
+        });
+    </script>
+
+</head>
+
+<body class="interna pilarVida">
+    <style>
+        .backgroundModalLinkExterno{
+			display:none;
+			width:100%;
+			height:9000px;
+			position:fixed;
+			background-color:#4F4255;
+			z-index:1009;
+		}
+		.modalLinkExterno{
+			position:fixed;
+			top:50%;
+			left:50%;
+			margin:-90px 0 0 -200px;
+			z-index:1010;
+			width:400px;
+			height:175px;
+			background:url(content/images/linkExterno.png) no-repeat;
+		}
+		.modalLinkExterno p{
+			text-align:center;
+			width:280px;
+			margin:38px auto 0 auto;
+			color:#454545;
+			font-size:11px;
+			font-family:verdana, tahoma, arial;
+		}
+		.modalLinkExterno .voltar, .modalLinkExterno .continuar{display:block;height:25px;text-indent:-99999px;}
+		.modalLinkExterno .voltar{
+			float:left;
+			width:71px;
+			margin:17px 0 22px 30px;
+			background:url(content/images/btVoltarLikExterno.png) no-repeat;
+		}
+		.modalLinkExterno .continuar{
+			float:right;
+			width:88px;
+			margin:17px 30px 22px 0;
+			background:url(content/images/btContinuarLinkExterno.png) no-repeat;
+		}
+	</style>
+
+    <div class="backgroundModalLinkExterno">&nbsp;</div>
+    <div class="modalLinkExterno" style="display:none;">
+        <p>
+            Você está sendo direcionado para outro site.
+            Você deve estar ciente de que a sanofi-aventis não
+            se responsabiliza pelas informações nele contidas.
+            <br><br>
+            Deseja prosseguir?
+        </p>
+        <a href="https://web.archive.org/web/20100905085731/http://www.atmosferafeminina.com.br:80/#" class="voltar">voltar</a>
+        <a href="https://web.archive.org/web/20100905085731/http://www.atmosferafeminina.com.br:80/#" class="continuar">continuar</a>
+    </div>
+
+    <div id="container">
+
+
+        <div id="header">
+            <div id="topo">
+                <h1 class="logotipo">
+                    <a href="home.html">atmosfera feminina</a>
+                </h1>
+                <h2 class="logotipo">
+                    <a href="#" target="_blank">sanofi aventis</a>
+                </h2>
+            </div>
+            <div id="banner">
+                <a class="cadastrese" href="cadastre_se.html">Cadastre-se no Atmosfera Feminina</a>
+                <img alt="atmosfera feminina banner" src="content/images/header_vida.jpg" title="atmosfera feminina banner">
+
+            </div>
+            <ul id="bar">
+                <li class="left">&nbsp;</li>
+                <li class="saude"><a href="saude.html">Saúde</a></li>
+                <li class="familia"><a href="familia.html">Família</a></li>
+                <li class="vida"><a href="vida.html">Vida</a></li>
+            </ul>
+
+            <div id="subBar">
+                <ul>
+                    <li>
+                        <a href="/web/20120922024311/http://www.atmosferafeminina.com.br:80/Saude/Saude_para_todos">Saúde
+                            para todos</a>
+                    </li>
+                    <li>
+                        <a href="/web/20120922024311/http://www.atmosferafeminina.com.br:80/Saude/Saude_da_mulher">Saúde
+                            da mulher</a>
+                    </li>
+                </ul>
+                <br class="clear">
+            </div>
+
+            <div id="canal">
+                <ul>
+
+                    <li>
+                        <a href="Canal_Higiene_intima">Canal Higiene íntima</a>
+                    </li>
+
+                    <li>
+                        <a href="Colunistas">Colunistas</a>
+                    </li>
+
+                    <li>
+                        <a href="Fique_por_Dentro">Fique por Dentro</a>
+                    </li>
+
+                    <li>
+                        <a href="Participe">Participe</a>
+                    </li>
+
+                    <li>
+                        <a href="Servicos">Serviços</a>
+                    </li>
+
+                    <li>
+                        <a href="Cadastre_se">Cadastre-se</a>
+                    </li>
+
+                </ul>
+            </div>
+            <ul class="news_busca">
+                <li class="busca">
+                    <form action="Sobre_o_Atmosfera_Feminina.mvc/Busca_avancada" method="post">
+                        <fieldset>
+                            <label class="labelCampo">
+                                <input class="campo" id="campo_busca" name="campo_busca" type="text" value="Busca"
+                                    style="background: none !important;">
+                            </label>
+                            <label><input type="submit" value="" class="bt_ok"></label>
+                        </fieldset>
+                    </form>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+        <div id="content">
+            <ul class="breadcrumb">
+                <li><a class="" href="/web/20121006100017/http://www.atmosferafeminina.com.br:80/Saude">Saúde</a></li>
+                <li><a class="" href="/web/20121006100017/http://www.atmosferafeminina.com.br:80/Saude/Saude_da_mulher">Saúde
+                        da mulher</a></li>
+                <li><a class="" href="/web/20121006100017/http://www.atmosferafeminina.com.br:80/Saude/Saude_da_mulher/Hipotireoidismo">Hipotireoidismo</a></li>
+            </ul>
+
+
+            <div class="content detalhe">
+                <div class="materia">
+                    <h3 class="title">Hipotireoidismo e infertilidade</h3>
+                    <cite>Da Redação</cite>
+                    <span class="date">20/09/2012</span>
+
+                    <div class="content">
+                        <img style="float: left; border: 0; margin: 10px;" src="/web/20121006100017im_/http://www.atmosferafeminina.com.br:80/content/user/images/gravidez123_.jpg"
+                            alt="" width="240" height="170"><br>
+                        <div>É fato que o hipotireoidismo interfere no funcionamento de todo o organismo, inclusive na
+                            fertilidade. Segundo a endocrinologista Laura Ward, presidente do departamento de tireoide
+                            da Sociedade Brasileira de Endocrinologia e Metabologia (SBEM), de São Paulo, nos homens, a
+                            disfunção pode afetar o desempenho sexual e reduzir o número de espermatozoides, sendo que
+                            os que restam têm menor chance de serem férteis. “Já nas mulheres, o hipotireoidismo pode
+                            fazer com que deixem de ovular, além de tornar o ciclo menstrual irregular. Dentre as que
+                            conseguem engravidar, há um risco maior de aborto, parto prematuro e descolamento da
+                            placenta”, diz a médica.&nbsp;</div>
+                        <div><br><strong>Revertendo o quadro</strong></div>
+                        <div><br>Apesar disso, a especialista garante que não há motivo para preocupação. Isso porque é
+                            sabido também que, se o hipotireoidismo for controlado adequadamente com medicamentos
+                            prescritos pelo médico, as chances de o casal ter uma gravidez bem-sucedida são enormes,
+                            independentemente da disfunção afetar o homem ou a mulher.&nbsp;</div>
+                        <div><br>Daí a importância de procurar um especialista e se submeter ao exame de função
+                            tireoidiana para verificar os níveis hormonais. “Quando a mulher apresenta hipotireoidismo
+                            e engravida, o médico pode aumentar ou até dobrar a dosagem da reposição hormonal. Isso
+                            porque o feto depende desse hormônio que passa pela placenta para promover o
+                            desenvolvimento das estruturas cerebrais, evitando que o bebê nasça com alguma
+                            deficiência”, esclarece Laura Ward.</div>
+                        <div><br>Leia mais sobre o tema: <a title="Mulher sem Falta" href="https://web.archive.org/web/20121006100017/http://www.mulhersemfalta.com.br/"
+                                target="_blank">www.mulhersemfalta.com.br</a></div>
+                    </div>
+                </div>
+
+
+                <script type="text/javascript">
+                    $(function () {
+                        $('.materiaBar .avaliacao #rate').rating('/Functions/AvaliarConteudo/1821/', { maxvalue: 5, increment: .5, curvalue: 0.0 });
+
+                        $(".envie").lightBox({
+                            event: 'click',
+                            target: "#envieModal",
+                            background: '#4F4255',
+                            border: 'solid 4px #654970',
+                            opacity: '0.9',
+                            width: '750px',
+                            height: '320px'
+                        });
+
+                        $(".compartilheconteudo").lightBox({
+                            event: 'click',
+                            target: "#compartilheModal",
+                            background: '#4F4255',
+                            border: 'solid 4px #654970',
+                            opacity: '0.9',
+                            width: '380px',
+                            height: '200px'
+                        });
+
+                        $(".proponha").lightBox({
+                            event: 'click',
+                            target: "#proponhaModal",
+                            background: '#4F4255',
+                            border: 'solid 4px #654970',
+                            opacity: '0.9',
+                            width: '660px',
+                            height: '300px'
+                        });
+                    });
+                </script>
+                <style type="text/css">
+                    div.btSubmit button {
+                        cursor: pointer;
+                        width: 58px;
+                        height: 25px;
+                    }
+                </style>
+
+                <ul class="materiaBar">
+                    <li class="avaliacao">
+                        <div id="rate" class="rating"></div>
+                        <a href="#">Avalie</a>
+                    </li>
+                    <li class="settings">
+                        <ul>
+                            <li class="send"><a href="#" class="envie">Envie</a></li>
+                            <li class="print"><a href="#" onclick="window.print()">Imprima</a></li>
+
+                            <li class="promova"><a href="#" class="proponha">Proponha</a></li>
+                        </ul>
+                    </li>
+                    <li class="compartilhar">
+                        <ul>
+                            <li class="facebook"><a href="http://www.facebook.com" target="_blank"></a></li>
+                            <li class="twitter"><a href="http://www.twitter.com" target="_blank"></a></li>
+                            <li class="orkut"><a href="http://www.orkut.com" target="_blank"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div id="envieModal" style="display: none;">
+                    <form action="#" method="post">
+                        <fieldset class="novoUsuario jNice">
+                            <div> <span>Seu nome*:</span>
+                                <div class="jNiceInputWrapper jNiceSafari">
+                                    <div class="jNiceInputInner"><input id="nome" name="nome" type="text" value=""
+                                            class="jNiceInput" style="width: 672px;"></div>
+                                </div>
+
+                            </div>
+                            <div> <span>Seu e-mail*:</span>
+                                <div class="jNiceInputWrapper jNiceSafari">
+                                    <div class="jNiceInputInner"><input id="email" name="email" type="text" value=""
+                                            class="jNiceInput" style="width: 683px;"></div>
+                                </div>
+
+                            </div>
+                            <div> <span>Destinatário*:</span>
+                                <div class="jNiceInputWrapper jNiceSafari">
+                                    <div class="jNiceInputInner"><input id="nome_destinatario" name="nome_destinatario"
+                                            type="text" value="" class="jNiceInput" style="width: 694px;"></div>
+                                </div>
+
+                            </div>
+                            <div> <span>E-mail*:</span>
+                                <div class="jNiceInputWrapper jNiceSafari">
+                                    <div class="jNiceInputInner"><input id="email_destinatario" name="email_destinatario"
+                                            type="text" value="" class="jNiceInput" style="width: 705px;"></div>
+                                </div>
+
+                            </div>
+                            <div class="historia">
+                                <span>Mensagem:</span>
+                                <span class="jNiceInputInner"><textarea cols="30" id="mensagem" name="mensagem" rows="5"></textarea></span>
+
+                            </div>
+                            <div class="campoObrigatorio">
+                                * Campos de preenchimento obrigatório
+                            </div>
+                            <div class="btSubmit">
+                                <button id="" name="" type="submit" class="submit" value=""><span><span></span></span></button>
+                            </div>
+                        </fieldset>
+                        <input id="titulo" name="titulo" type="hidden" value="Hipotireoidismo e infertilidade">
+                    </form>
+                </div>
+
+                <div id="compartilheModal" style="display: none;">
+                    <ul class="narede">
+                        <li class="twitter">
+                            <a class="" href="https://web.archive.org/web/20121006100017/http://twitter.com/home?status=http://goo.gl/15SGt"
+                                target="_blank">twitter</a>
+                        </li>
+                        <li class="orkut">
+                            <a class="" href="https://web.archive.org/web/20121006100017/http://promote.orkut.com/preview?nt=orkut.com&amp;tt=Hipotireoidismo+e+infertilidade&amp;du=http%3a%2f%2fgoo.gl%2f15SGt"
+                                target="_blank">orkut</a>
+                        </li>
+                        <li class="facebook">
+                            <a class="" href="https://web.archive.org/web/20121006100017/http://www.facebook.com/sharer.php?title=Atmosfera Feminina&amp;url=http%3a%2f%2fgoo.gl%2f15SGt&amp;summary=Hipotireoidismo+e+infertilidade"
+                                target="_blank">facebook</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="proponhaModal" style="display: none;">
+                    <form action="/web/20121006100017/http://www.atmosferafeminina.com.br:80/Functions.mvc/Proponha"
+                        method="post">
+                        <fieldset class="novoUsuario jNice">
+                            <div> <span>Seu nome*:</span>
+                                <div class="jNiceInputWrapper jNiceSafari">
+                                    <div class="jNiceInputInner"><input id="nome" name="nome" type="text" value=""
+                                            class="jNiceInput" style="width: 541px;"></div>
+                                </div>
+
+                            </div>
+                            <div> <span>Seu e-mail*:</span>
+                                <div class="jNiceInputWrapper jNiceSafari">
+                                    <div class="jNiceInputInner"><input id="email" name="email" type="text" value=""
+                                            class="jNiceInput" style="width: 628px;"></div>
+                                </div>
+
+                            </div>
+                            <div class="historia">
+                                <span>Mensagem*:</span>
+                                <span class="jNiceInputInner"><textarea cols="30" id="mensagem" name="mensagem" rows="5"></textarea></span>
+
+                            </div>
+                            <div class="campoObrigatorio">
+                                * Campos de preenchimento obrigatório
+                            </div>
+                            <div class="btSubmit">
+                                <button id="" name="" type="submit" class="submit" value=""><span><span></span></span></button>
+                            </div>
+                        </fieldset>
+                        <input id="titulo" name="titulo" type="hidden" value="Hipotireoidismo e infertilidade">
+                    </form>
+                </div>
+                <ul class="leiaTambem">
+                    <li class="title">Leia também</li>
+                    <li>
+                        <strong>Hipotireoidismo:</strong>
+                        <a class="" href="/web/20121006100017/http://www.atmosferafeminina.com.br:80/Saude/Saude_da_mulher/Hipotireoidismo/Hipotireoidismo_e_comum_na_gravidez_">Hipotireoidismo
+                            é comum na gravidez?</a>
+                    </li>
+
+                    <li>
+                        <strong>Hipotireoidismo:</strong>
+                        <a class="" href="/web/20121006100017/http://www.atmosferafeminina.com.br:80/Saude/Saude_da_mulher/Hipotireoidismo/Hipotireoidismo_e_mais_comum_apos_os_40">Hipotireoidismo
+                            é mais comum após os 40</a>
+                    </li>
+
+                    <li>
+                        <strong>Hipotireoidismo:</strong>
+                        <a class="" href="/web/20121006100017/http://www.atmosferafeminina.com.br:80/Saude/Saude_da_mulher/Hipotireoidismo/Hipotireoidismo_faz_o_cabelo_cair_">Hipotireoidismo
+                            faz o cabelo cair?</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <script type="text/javascript">
+                var array_publicidade1 = [];
+                var array_publicidade2 = [];
+                var array_publicidade3 = [];
+            </script>
+
+            <ul class="publicidade">
+                <li>
+                    <ul class="publicidadeFunction1">
+                        <li><object type="application/x-shockwave-flash" data="/content/user/publicidade/147_original.swf"
+                                width="234" height="234">
+                                <param name="movie" value="/content/user/publicidade/147_original.swf"><embed src="/content/user/publicidade/147_original.swf"
+                                    width="234" height="234" type="application/x-shockwave-flash" pluginspage="https://web.archive.org/web/20121006100017/http://www.macromedia.com/go/getflashplayer"></object></li>
+                    </ul>
+                </li>
+            </ul>
+            <br class="clear">
+            <script type="text/javascript">
+                $(".publicidadeFunction1").listChange({ timeOut: 15000, array: array_publicidade1 });
+                $(".publicidadeFunction2").listChange({ timeOut: 15000, array: array_publicidade2 });
+                $(".publicidadeFunction3").listChange({ timeOut: 15000, array: array_publicidade3 });
+            </script>
+
+
+            <a href="javascript: void(0);" onclick="history.go(-1)" class="btVoltar">voltar</a>
+        </div>
+
+
+
+        <div id="footer">
+            <ul class="sitemap">
+                <li id="0">
+                    <div id="Saude">
+                        <ul>
+                            <li class="title"><a href="Saude">Saúde</a></li>
+
+                            <li><a href="Saude/Saude_para_todos">Saúde para todos</a></li>
+
+                            <li><a href="Saude/Saude_da_mulher">Saúde da mulher</a></li>
+
+                        </ul>
+                    </div>
+                    <div id="Familia">
+                        <ul>
+                            <li class="title"><a href="Familia">Família</a></li>
+
+                            <li><a href="Familia/Gestantes">Gestantes</a></li>
+
+                            <li><a href="Familia/Bebes">Bebês</a></li>
+
+                            <li><a href="Familia/Criancas">Crianças</a></li>
+
+                            <li><a href="Familia/Adolescentes">Adolescentes</a></li>
+
+                        </ul>
+                    </div>
+                    <div id="Vida">
+                        <ul>
+                            <li class="title"><a href="Vida">Vida</a></li>
+
+                            <li><a href="Vida/Beleza">Beleza</a></li>
+
+                            <li><a href="Vida/Vida_profissional">Vida profissional</a></li>
+
+                            <li><a href="Vida/Bem_estar">Bem-estar</a></li>
+
+                            <li><a href="Vida/Alimentacao">Alimentação</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li id="1">
+                    <div id="Servicos">
+                        <ul>
+                            <li class="title"><a href="Servicos">Serviços</a></li>
+
+                            <li><a href="Servicos/Calculadoras_medicas">Calculadoras médicas</a></li>
+
+                            <li><a href="Servicos/Colecao_Comida_que_Cuida">Coleção Comida que Cuida</a></li>
+
+                            <li><a href="Servicos/Exames_medicos">Exames médicos</a></li>
+
+                            <li><a href="Servicos/Glossario">Glossário</a></li>
+
+                            <li><a href="Servicos/Links_interessantes">Links interessantes</a></li>
+
+                        </ul>
+                    </div>
+                    <div id="Canal_Higiene_intima">
+                        <ul>
+                            <li class="title"><a href="Canal_Higiene_intima">Canal Higiene íntima</a></li>
+
+                            <li><a href="Canal_Higiene_intima/Teen">Teen</a></li>
+
+                            <li><a href="Canal_Higiene_intima/Bebe">Bebê</a></li>
+
+                            <li><a href="Canal_Higiene_intima/Mulher">Mulher</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li id="2">
+                    <div id="Sobre_o_Atmosfera_Feminina">
+                        <ul>
+                            <li class="title"><a href="Sobre_o_Atmosfera_Feminina">Sobre o Atmosfera Feminina</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Cadastre_se">Cadastre-se</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Alterar_cadastro">Alterar cadastro</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Fale_Conosco">Fale Conosco</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Quem_somos">Quem somos</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Imprensa">Imprensa</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Perguntas_frequentes">Perguntas frequentes</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Busca_avancada">Busca avançada</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Indique_o_site">Indique o site</a></li>
+
+                            <li><a href="Sobre_o_Atmosfera_Feminina/Privacidade">Privacidade</a></li>
+
+                        </ul>
+                    </div>
+                    <div id="Colunistas">
+                        <ul>
+                            <li class="title"><a href="Colunistas">Colunistas</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li id="3">
+                    <div id="Fique_por_Dentro">
+                        <ul>
+                            <li class="title"><a href="Fique_por_Dentro">Fique por Dentro</a></li>
+
+                            <li><a href="Fique_por_Dentro/Agenda">Agenda</a></li>
+
+                            <li><a href="Fique_por_Dentro/Noticias">Notícias</a></li>
+
+                            <li><a href="Fique_por_Dentro/Entrevistas">Entrevistas</a></li>
+
+                        </ul>
+                    </div>
+                    <div id="Participe">
+                        <ul>
+                            <li class="title"><a href="Participe">Participe</a></li>
+
+                            <li><a href="Participe/Sua_historia">Sua história</a></li>
+
+                            <li><a href="Participe/Pergunte_ao_especialista">Pergunte ao especialista</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <br class="clear">
+
+        <div class="footerInfo">
+            <p>
+                <strong>Atmosfera Feminina - Um serviço sanofi-aventis</strong><br>
+                Av. Major Sylvio de Magalhães Padilha, 5.200 - Ed. Atlanta, Jardim Morumbi - São Paulo, SP - CEP:
+                05693-000
+                SAC: 0800-703 0014 (de 2ª à 6ª feira das 9 às 17 hs)
+            </p>
+
+            <p>
+                <strong> Nosso conteúdo serve para seu conhecimento e informação.
+                    Em caso de dúvida, procure sempre seu médico para orientá-la quanto ao melhor tratamento e
+                    conduta.</strong>
+            </p>
+
+            <p>
+                Copyright © 2005-2010 sanofi-aventis. Todos os direitos reservados.
+                <strong> Última atualização:</strong> 05/09/2010
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
